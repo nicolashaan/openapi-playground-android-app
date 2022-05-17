@@ -4,14 +4,11 @@ All URIs are relative to *https://api.twitter.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getUsersIdBookmarks**](BookmarksApi.md#getUsersIdBookmarks) | **GET** /2/users/{id}/bookmarks | Bookmarks by User
-[**postUsersIdBookmarks**](BookmarksApi.md#postUsersIdBookmarks) | **POST** /2/users/{id}/bookmarks | Add Tweet to Bookmarks
-[**usersIdBookmarksDelete**](BookmarksApi.md#usersIdBookmarksDelete) | **DELETE** /2/users/{id}/bookmarks/{tweet_id} | Remove a bookmarked Tweet
+[**getUsersIdBookmarks**](BookmarksApi.md#getUsersIdBookmarks) | **GET** 2/users/{id}/bookmarks | Bookmarks by User
+[**postUsersIdBookmarks**](BookmarksApi.md#postUsersIdBookmarks) | **POST** 2/users/{id}/bookmarks | Add Tweet to Bookmarks
+[**usersIdBookmarksDelete**](BookmarksApi.md#usersIdBookmarksDelete) | **DELETE** 2/users/{id}/bookmarks/{tweet_id} | Remove a bookmarked Tweet
 
 
-<a name="getUsersIdBookmarks"></a>
-# **getUsersIdBookmarks**
-> GenericTweetsTimelineResponseEntity getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Bookmarks by User
 
@@ -20,10 +17,12 @@ Returns Tweet objects that have been bookmarked by the requesting user
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = BookmarksApi()
+val apiClient = ApiClient()
+val webService = apiClient.createWebservice(BookmarksApi::class.java)
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This parameter is used to get the next 'page' of results.
@@ -33,15 +32,9 @@ val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified",
 val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration_ms","height","preview_image_url","type","url","width","public_metrics","non_public_metrics","organic_metrics","promoted_metrics","alt_text","variants"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Media fields to display.
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
-try {
-    val result : GenericTweetsTimelineResponseEntity = apiInstance.getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling BookmarksApi#getUsersIdBookmarks")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling BookmarksApi#getUsersIdBookmarks")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : GenericTweetsTimelineResponseEntity = webService.getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 }
 ```
 
@@ -66,17 +59,12 @@ Name | Type | Description  | Notes
 ### Authorization
 
 
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
-<a name="postUsersIdBookmarks"></a>
-# **postUsersIdBookmarks**
-> BookmarkMutationResponseEntity postUsersIdBookmarks(id, addBookmarkRequestEntity)
 
 Add Tweet to Bookmarks
 
@@ -85,21 +73,17 @@ Adds a Tweet (ID in the body) to the requesting user&#39;s (in the path) bookmar
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = BookmarksApi()
+val apiClient = ApiClient()
+val webService = apiClient.createWebservice(BookmarksApi::class.java)
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to add bookmarks
 val addBookmarkRequestEntity : AddBookmarkRequestEntity =  // AddBookmarkRequestEntity | 
-try {
-    val result : BookmarkMutationResponseEntity = apiInstance.postUsersIdBookmarks(id, addBookmarkRequestEntity)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling BookmarksApi#postUsersIdBookmarks")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling BookmarksApi#postUsersIdBookmarks")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : BookmarkMutationResponseEntity = webService.postUsersIdBookmarks(id, addBookmarkRequestEntity)
 }
 ```
 
@@ -117,17 +101,12 @@ Name | Type | Description  | Notes
 ### Authorization
 
 
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json, application/problem+json
 
-<a name="usersIdBookmarksDelete"></a>
-# **usersIdBookmarksDelete**
-> BookmarkMutationResponseEntity usersIdBookmarksDelete(id, tweetId)
 
 Remove a bookmarked Tweet
 
@@ -136,21 +115,17 @@ Removes a Tweet from the requesting user&#39;s bookmarked Tweets.
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = BookmarksApi()
+val apiClient = ApiClient()
+val webService = apiClient.createWebservice(BookmarksApi::class.java)
 val id : kotlin.String = id_example // kotlin.String | The ID of the user whose bookmark is to be removed.
 val tweetId : kotlin.String = tweetId_example // kotlin.String | The ID of the tweet that the user is removing from bookmarks
-try {
-    val result : BookmarkMutationResponseEntity = apiInstance.usersIdBookmarksDelete(id, tweetId)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling BookmarksApi#usersIdBookmarksDelete")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling BookmarksApi#usersIdBookmarksDelete")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : BookmarkMutationResponseEntity = webService.usersIdBookmarksDelete(id, tweetId)
 }
 ```
 
@@ -168,8 +143,6 @@ Name | Type | Description  | Notes
 ### Authorization
 
 
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
 
 ### HTTP request headers
 

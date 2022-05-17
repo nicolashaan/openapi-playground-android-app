@@ -4,12 +4,9 @@ All URIs are relative to *https://api.twitter.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getOpenApiSpec**](GeneralApi.md#getOpenApiSpec) | **GET** /2/openapi.json | Returns the open api spec document.
+[**getOpenApiSpec**](GeneralApi.md#getOpenApiSpec) | **GET** 2/openapi.json | Returns the open api spec document.
 
 
-<a name="getOpenApiSpec"></a>
-# **getOpenApiSpec**
-> kotlin.Any getOpenApiSpec()
 
 Returns the open api spec document.
 
@@ -18,19 +15,15 @@ Full open api spec in JSON format. (See https://github.com/OAI/OpenAPI-Specifica
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = GeneralApi()
-try {
-    val result : kotlin.Any = apiInstance.getOpenApiSpec()
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling GeneralApi#getOpenApiSpec")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling GeneralApi#getOpenApiSpec")
-    e.printStackTrace()
+val apiClient = ApiClient()
+val webService = apiClient.createWebservice(GeneralApi::class.java)
+
+launch(Dispatchers.IO) {
+    val result : kotlin.Any = webService.getOpenApiSpec()
 }
 ```
 

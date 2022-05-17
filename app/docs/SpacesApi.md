@@ -4,17 +4,14 @@ All URIs are relative to *https://api.twitter.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**findSpaceById**](SpacesApi.md#findSpaceById) | **GET** /2/spaces/{id} | Space lookup by Space ID
-[**findSpacesByCreatorIds**](SpacesApi.md#findSpacesByCreatorIds) | **GET** /2/spaces/by/creator_ids | Space lookup by their creators
-[**findSpacesByIds**](SpacesApi.md#findSpacesByIds) | **GET** /2/spaces | Space lookup up Space IDs
-[**searchSpaces**](SpacesApi.md#searchSpaces) | **GET** /2/spaces/search | Search for Spaces
-[**spaceBuyers**](SpacesApi.md#spaceBuyers) | **GET** /2/spaces/{id}/buyers | Retrieve the list of users who purchased a ticket to the given space
-[**spaceTweets**](SpacesApi.md#spaceTweets) | **GET** /2/spaces/{id}/tweets | Retrieve tweets from a Space
+[**findSpaceById**](SpacesApi.md#findSpaceById) | **GET** 2/spaces/{id} | Space lookup by Space ID
+[**findSpacesByCreatorIds**](SpacesApi.md#findSpacesByCreatorIds) | **GET** 2/spaces/by/creator_ids | Space lookup by their creators
+[**findSpacesByIds**](SpacesApi.md#findSpacesByIds) | **GET** 2/spaces | Space lookup up Space IDs
+[**searchSpaces**](SpacesApi.md#searchSpaces) | **GET** 2/spaces/search | Search for Spaces
+[**spaceBuyers**](SpacesApi.md#spaceBuyers) | **GET** 2/spaces/{id}/buyers | Retrieve the list of users who purchased a ticket to the given space
+[**spaceTweets**](SpacesApi.md#spaceTweets) | **GET** 2/spaces/{id}/tweets | Retrieve tweets from a Space
 
 
-<a name="findSpaceById"></a>
-# **findSpaceById**
-> SingleSpaceLookupResponseEntity findSpaceById(id, spaceFields, expansions)
 
 Space lookup by Space ID
 
@@ -23,22 +20,19 @@ Returns a variety of information about the Space specified by the requested ID
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = SpacesApi()
+val apiClient = ApiClient()
+apiClient.setBearerToken("TOKEN")
+val webService = apiClient.createWebservice(SpacesApi::class.java)
 val id : kotlin.String = id_example // kotlin.String | The space id to be retrieved
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
-try {
-    val result : SingleSpaceLookupResponseEntity = apiInstance.findSpaceById(id, spaceFields, expansions)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SpacesApi#findSpaceById")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SpacesApi#findSpaceById")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : SingleSpaceLookupResponseEntity = webService.findSpaceById(id, spaceFields, expansions)
 }
 ```
 
@@ -58,18 +52,13 @@ Name | Type | Description  | Notes
 
 
 Configure BearerToken:
-    ApiClient.accessToken = ""
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
+    ApiClient().setBearerToken("TOKEN")
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
-<a name="findSpacesByCreatorIds"></a>
-# **findSpacesByCreatorIds**
-> MultiSpaceLookupResponseEntity findSpacesByCreatorIds(userIds, spaceFields, expansions)
 
 Space lookup by their creators
 
@@ -78,22 +67,19 @@ Returns a variety of information about the Spaces created by the provided User I
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = SpacesApi()
+val apiClient = ApiClient()
+apiClient.setBearerToken("TOKEN")
+val webService = apiClient.createWebservice(SpacesApi::class.java)
 val userIds : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | The users to search through
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
-try {
-    val result : MultiSpaceLookupResponseEntity = apiInstance.findSpacesByCreatorIds(userIds, spaceFields, expansions)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SpacesApi#findSpacesByCreatorIds")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SpacesApi#findSpacesByCreatorIds")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : MultiSpaceLookupResponseEntity = webService.findSpacesByCreatorIds(userIds, spaceFields, expansions)
 }
 ```
 
@@ -113,18 +99,13 @@ Name | Type | Description  | Notes
 
 
 Configure BearerToken:
-    ApiClient.accessToken = ""
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
+    ApiClient().setBearerToken("TOKEN")
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
-<a name="findSpacesByIds"></a>
-# **findSpacesByIds**
-> MultiSpaceLookupResponseEntity findSpacesByIds(ids, spaceFields, expansions)
 
 Space lookup up Space IDs
 
@@ -133,22 +114,19 @@ Returns a variety of information about the Spaces specified by the requested IDs
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = SpacesApi()
+val apiClient = ApiClient()
+apiClient.setBearerToken("TOKEN")
+val webService = apiClient.createWebservice(SpacesApi::class.java)
 val ids : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | A list of space ids
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
-try {
-    val result : MultiSpaceLookupResponseEntity = apiInstance.findSpacesByIds(ids, spaceFields, expansions)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SpacesApi#findSpacesByIds")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SpacesApi#findSpacesByIds")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : MultiSpaceLookupResponseEntity = webService.findSpacesByIds(ids, spaceFields, expansions)
 }
 ```
 
@@ -168,18 +146,13 @@ Name | Type | Description  | Notes
 
 
 Configure BearerToken:
-    ApiClient.accessToken = ""
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
+    ApiClient().setBearerToken("TOKEN")
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
-<a name="searchSpaces"></a>
-# **searchSpaces**
-> MultiSpaceLookupResponseEntity searchSpaces(query, state, maxResults, spaceFields, expansions)
 
 Search for Spaces
 
@@ -188,24 +161,21 @@ Returns Spaces that match the provided query.
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = SpacesApi()
+val apiClient = ApiClient()
+apiClient.setBearerToken("TOKEN")
+val webService = apiClient.createWebservice(SpacesApi::class.java)
 val query : kotlin.String = crypto // kotlin.String | The search query
 val state : kotlin.String = live // kotlin.String | The state of spaces to search for
 val maxResults : kotlin.Int = 56 // kotlin.Int | The number of results to return. The maximum for this value is 100.
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
-try {
-    val result : MultiSpaceLookupResponseEntity = apiInstance.searchSpaces(query, state, maxResults, spaceFields, expansions)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SpacesApi#searchSpaces")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SpacesApi#searchSpaces")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : MultiSpaceLookupResponseEntity = webService.searchSpaces(query, state, maxResults, spaceFields, expansions)
 }
 ```
 
@@ -227,18 +197,13 @@ Name | Type | Description  | Notes
 
 
 Configure BearerToken:
-    ApiClient.accessToken = ""
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
+    ApiClient().setBearerToken("TOKEN")
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
-<a name="spaceBuyers"></a>
-# **spaceBuyers**
-> MultiUserLookupResponseEntity spaceBuyers(id, userFields)
 
 Retrieve the list of users who purchased a ticket to the given space
 
@@ -247,21 +212,18 @@ Retrieves the list of users who purchased a ticket to the given space
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = SpacesApi()
+val apiClient = ApiClient()
+apiClient.setBearerToken("TOKEN")
+val webService = apiClient.createWebservice(SpacesApi::class.java)
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
-try {
-    val result : MultiUserLookupResponseEntity = apiInstance.spaceBuyers(id, userFields)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SpacesApi#spaceBuyers")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SpacesApi#spaceBuyers")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : MultiUserLookupResponseEntity = webService.spaceBuyers(id, userFields)
 }
 ```
 
@@ -280,18 +242,13 @@ Name | Type | Description  | Notes
 
 
 Configure BearerToken:
-    ApiClient.accessToken = ""
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
+    ApiClient().setBearerToken("TOKEN")
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
-<a name="spaceTweets"></a>
-# **spaceTweets**
-> MultiTweetLookupResponseEntity spaceTweets(id, maxResults, tweetFields)
 
 Retrieve tweets from a Space
 
@@ -300,22 +257,19 @@ Retrieves tweets shared in the specified space
 ### Example
 ```kotlin
 // Import classes:
+//import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
 //import fr.haan.open_api_playground_app.data.entities.*
 
-val apiInstance = SpacesApi()
+val apiClient = ApiClient()
+apiClient.setBearerToken("TOKEN")
+val webService = apiClient.createWebservice(SpacesApi::class.java)
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
 val maxResults : kotlin.Int = 56 // kotlin.Int | The number of tweets to fetch from the provided space. If not provided, the value will default to the maximum of 100
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
-try {
-    val result : MultiTweetLookupResponseEntity = apiInstance.spaceTweets(id, maxResults, tweetFields)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SpacesApi#spaceTweets")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SpacesApi#spaceTweets")
-    e.printStackTrace()
+
+launch(Dispatchers.IO) {
+    val result : MultiTweetLookupResponseEntity = webService.spaceTweets(id, maxResults, tweetFields)
 }
 ```
 
@@ -335,9 +289,7 @@ Name | Type | Description  | Notes
 
 
 Configure BearerToken:
-    ApiClient.accessToken = ""
-Configure OAuth2UserToken:
-    ApiClient.accessToken = ""
+    ApiClient().setBearerToken("TOKEN")
 
 ### HTTP request headers
 
