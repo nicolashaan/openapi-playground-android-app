@@ -1,5 +1,5 @@
 
-# DisallowedResourceProblemAllOf
+# DisallowedResourceProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

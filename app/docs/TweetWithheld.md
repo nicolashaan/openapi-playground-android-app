@@ -1,5 +1,5 @@
 
-# TweetWithheld
+# TweetWithheldEntity
 
 ## Properties
 Name | Type | Description | Notes

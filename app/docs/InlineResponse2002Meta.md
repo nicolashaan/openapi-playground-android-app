@@ -1,5 +1,5 @@
 
-# InlineResponse2002Meta
+# InlineResponse2002MetaEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,5 +1,5 @@
 
-# RulesRequestSummary
+# RulesRequestSummaryEntity
 
 ## Properties
 Name | Type | Description | Notes

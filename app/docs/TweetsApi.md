@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 <a name="addOrDeleteRules"></a>
 # **addOrDeleteRules**
-> AddOrDeleteRulesResponse addOrDeleteRules(addOrDeleteRulesRequest, dryRun)
+> AddOrDeleteRulesResponseEntity addOrDeleteRules(addOrDeleteRulesRequestEntity, dryRun)
 
 Add/Delete rules
 
@@ -45,10 +45,10 @@ Add or delete rules from a user&#39;s active rule set. Users can provide unique,
 //import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
-val addOrDeleteRulesRequest : AddOrDeleteRulesRequest =  // AddOrDeleteRulesRequest | 
+val addOrDeleteRulesRequestEntity : AddOrDeleteRulesRequestEntity =  // AddOrDeleteRulesRequestEntity | 
 val dryRun : kotlin.Boolean = true // kotlin.Boolean | Dry Run can be used with both the add and delete action, with the expected result given, but without actually taking any action in the system (meaning the end state will always be as it was when the request was submitted). This is particularly useful to validate rule changes.
 try {
-    val result : AddOrDeleteRulesResponse = apiInstance.addOrDeleteRules(addOrDeleteRulesRequest, dryRun)
+    val result : AddOrDeleteRulesResponseEntity = apiInstance.addOrDeleteRules(addOrDeleteRulesRequestEntity, dryRun)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#addOrDeleteRules")
@@ -63,12 +63,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **addOrDeleteRulesRequest** | [**AddOrDeleteRulesRequest**](AddOrDeleteRulesRequest.md)|  |
+ **addOrDeleteRulesRequestEntity** | [**AddOrDeleteRulesRequestEntity**](AddOrDeleteRulesRequestEntity.md)|  |
  **dryRun** | **kotlin.Boolean**| Dry Run can be used with both the add and delete action, with the expected result given, but without actually taking any action in the system (meaning the end state will always be as it was when the request was submitted). This is particularly useful to validate rule changes. | [optional]
 
 ### Return type
 
-[**AddOrDeleteRulesResponse**](AddOrDeleteRulesResponse.md)
+[**AddOrDeleteRulesResponseEntity**](AddOrDeleteRulesResponseEntity.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Configure BearerToken:
 
 <a name="createTweet"></a>
 # **createTweet**
-> TweetCreateResponse createTweet(inlineObject3)
+> TweetCreateResponseEntity createTweet(inlineObject3Entity)
 
 Creation of a Tweet
 
@@ -96,9 +96,9 @@ Causes the user to create a tweet under the authorized account.
 //import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
-val inlineObject3 : InlineObject3 =  // InlineObject3 | 
+val inlineObject3Entity : InlineObject3Entity =  // InlineObject3Entity | 
 try {
-    val result : TweetCreateResponse = apiInstance.createTweet(inlineObject3)
+    val result : TweetCreateResponseEntity = apiInstance.createTweet(inlineObject3Entity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#createTweet")
@@ -113,11 +113,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject3** | [**InlineObject3**](InlineObject3.md)|  | [optional]
+ **inlineObject3Entity** | [**InlineObject3Entity**](InlineObject3Entity.md)|  | [optional]
 
 ### Return type
 
-[**TweetCreateResponse**](TweetCreateResponse.md)
+[**TweetCreateResponseEntity**](TweetCreateResponseEntity.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Configure OAuth2UserToken:
 
 <a name="deleteTweetById"></a>
 # **deleteTweetById**
-> TweetDeleteResponse deleteTweetById(id)
+> TweetDeleteResponseEntity deleteTweetById(id)
 
 Tweet delete by Tweet ID
 
@@ -147,7 +147,7 @@ Delete specified Tweet (in the path) by ID.
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the Tweet to be deleted.
 try {
-    val result : TweetDeleteResponse = apiInstance.deleteTweetById(id)
+    val result : TweetDeleteResponseEntity = apiInstance.deleteTweetById(id)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#deleteTweetById")
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TweetDeleteResponse**](TweetDeleteResponse.md)
+[**TweetDeleteResponseEntity**](TweetDeleteResponseEntity.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ Configure OAuth2UserToken:
 
 <a name="findTweetById"></a>
 # **findTweetById**
-> SingleTweetLookupResponse findTweetById(id, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> SingleTweetLookupResponseEntity findTweetById(id, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Tweet lookup by Tweet ID
 
@@ -202,7 +202,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : SingleTweetLookupResponse = apiInstance.findTweetById(id, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : SingleTweetLookupResponseEntity = apiInstance.findTweetById(id, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#findTweetById")
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleTweetLookupResponse**](SingleTweetLookupResponse.md)
+[**SingleTweetLookupResponseEntity**](SingleTweetLookupResponseEntity.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ Configure OAuth2UserToken:
 
 <a name="findTweetsById"></a>
 # **findTweetsById**
-> MultiTweetLookupResponse findTweetsById(ids, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> MultiTweetLookupResponseEntity findTweetsById(ids, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Tweet lookup by Tweet IDs
 
@@ -265,7 +265,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : MultiTweetLookupResponse = apiInstance.findTweetsById(ids, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : MultiTweetLookupResponseEntity = apiInstance.findTweetsById(ids, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#findTweetsById")
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiTweetLookupResponse**](MultiTweetLookupResponse.md)
+[**MultiTweetLookupResponseEntity**](MultiTweetLookupResponseEntity.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ Configure OAuth2UserToken:
 
 <a name="findTweetsThatQuoteATweet"></a>
 # **findTweetsThatQuoteATweet**
-> QuoteTweetLookupResponse findTweetsThatQuoteATweet(id, maxResults, exclude, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> QuoteTweetLookupResponseEntity findTweetsThatQuoteATweet(id, maxResults, exclude, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Retrieve tweets that quote a tweet.
 
@@ -330,7 +330,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : QuoteTweetLookupResponse = apiInstance.findTweetsThatQuoteATweet(id, maxResults, exclude, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : QuoteTweetLookupResponseEntity = apiInstance.findTweetsThatQuoteATweet(id, maxResults, exclude, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#findTweetsThatQuoteATweet")
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**QuoteTweetLookupResponse**](QuoteTweetLookupResponse.md)
+[**QuoteTweetLookupResponseEntity**](QuoteTweetLookupResponseEntity.md)
 
 ### Authorization
 
@@ -374,7 +374,7 @@ Configure OAuth2UserToken:
 
 <a name="getRules"></a>
 # **getRules**
-> InlineResponse2001 getRules(ids, maxResults, paginationToken)
+> InlineResponse2001Entity getRules(ids, maxResults, paginationToken)
 
 Rules lookup
 
@@ -391,7 +391,7 @@ val ids : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<k
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This value is populated by passing the 'next_token' returned in a request to paginate through results.
 try {
-    val result : InlineResponse2001 = apiInstance.getRules(ids, maxResults, paginationToken)
+    val result : InlineResponse2001Entity = apiInstance.getRules(ids, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#getRules")
@@ -412,7 +412,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2001Entity**](InlineResponse2001Entity.md)
 
 ### Authorization
 
@@ -427,7 +427,7 @@ Configure BearerToken:
 
 <a name="hideReplyById"></a>
 # **hideReplyById**
-> InlineResponse200 hideReplyById(id, inlineObject4)
+> InlineResponse200Entity hideReplyById(id, inlineObject4Entity)
 
 Hide replies
 
@@ -441,9 +441,9 @@ Hides or unhides a reply to an owned conversation.
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the reply that you want to hide or unhide.
-val inlineObject4 : InlineObject4 =  // InlineObject4 | 
+val inlineObject4Entity : InlineObject4Entity =  // InlineObject4Entity | 
 try {
-    val result : InlineResponse200 = apiInstance.hideReplyById(id, inlineObject4)
+    val result : InlineResponse200Entity = apiInstance.hideReplyById(id, inlineObject4Entity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#hideReplyById")
@@ -459,11 +459,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the reply that you want to hide or unhide. |
- **inlineObject4** | [**InlineObject4**](InlineObject4.md)|  | [optional]
+ **inlineObject4Entity** | [**InlineObject4Entity**](InlineObject4Entity.md)|  | [optional]
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse200Entity**](InlineResponse200Entity.md)
 
 ### Authorization
 
@@ -478,7 +478,7 @@ Configure OAuth2UserToken:
 
 <a name="listsIdTweets"></a>
 # **listsIdTweets**
-> InlineResponse2002 listsIdTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> InlineResponse2002Entity listsIdTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 List Tweets timeline by List ID
 
@@ -501,7 +501,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : InlineResponse2002 = apiInstance.listsIdTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : InlineResponse2002Entity = apiInstance.listsIdTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#listsIdTweets")
@@ -528,7 +528,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2002Entity**](InlineResponse2002Entity.md)
 
 ### Authorization
 
@@ -545,7 +545,7 @@ Configure OAuth2UserToken:
 
 <a name="sampleStream"></a>
 # **sampleStream**
-> StreamingTweet sampleStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
+> StreamingTweetEntity sampleStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
 
 Sample stream
 
@@ -566,7 +566,7 @@ val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 val backfillMinutes : kotlin.Int = 56 // kotlin.Int | The number of minutes of backfill requested
 try {
-    val result : StreamingTweet = apiInstance.sampleStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
+    val result : StreamingTweetEntity = apiInstance.sampleStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#sampleStream")
@@ -591,7 +591,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**StreamingTweet**](StreamingTweet.md)
+[**StreamingTweetEntity**](StreamingTweetEntity.md)
 
 ### Authorization
 
@@ -606,7 +606,7 @@ Configure BearerToken:
 
 <a name="searchStream"></a>
 # **searchStream**
-> FilteredStreamingTweet searchStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
+> FilteredStreamingTweetEntity searchStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
 
 Filtered stream
 
@@ -627,7 +627,7 @@ val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 val backfillMinutes : kotlin.Int = 56 // kotlin.Int | The number of minutes of backfill requested
 try {
-    val result : FilteredStreamingTweet = apiInstance.searchStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
+    val result : FilteredStreamingTweetEntity = apiInstance.searchStream(expansions, tweetFields, userFields, mediaFields, placeFields, pollFields, backfillMinutes)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#searchStream")
@@ -652,7 +652,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FilteredStreamingTweet**](FilteredStreamingTweet.md)
+[**FilteredStreamingTweetEntity**](FilteredStreamingTweetEntity.md)
 
 ### Authorization
 
@@ -667,7 +667,7 @@ Configure BearerToken:
 
 <a name="spaceBuyers"></a>
 # **spaceBuyers**
-> MultiUserLookupResponse spaceBuyers(id, userFields)
+> MultiUserLookupResponseEntity spaceBuyers(id, userFields)
 
 Retrieve the list of users who purchased a ticket to the given space
 
@@ -683,7 +683,7 @@ val apiInstance = TweetsApi()
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiUserLookupResponse = apiInstance.spaceBuyers(id, userFields)
+    val result : MultiUserLookupResponseEntity = apiInstance.spaceBuyers(id, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#spaceBuyers")
@@ -703,7 +703,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiUserLookupResponse**](MultiUserLookupResponse.md)
+[**MultiUserLookupResponseEntity**](MultiUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -720,7 +720,7 @@ Configure OAuth2UserToken:
 
 <a name="spaceTweets"></a>
 # **spaceTweets**
-> MultiTweetLookupResponse spaceTweets(id, maxResults, tweetFields)
+> MultiTweetLookupResponseEntity spaceTweets(id, maxResults, tweetFields)
 
 Retrieve tweets from a Space
 
@@ -737,7 +737,7 @@ val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from whic
 val maxResults : kotlin.Int = 56 // kotlin.Int | The number of tweets to fetch from the provided space. If not provided, the value will default to the maximum of 100
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 try {
-    val result : MultiTweetLookupResponse = apiInstance.spaceTweets(id, maxResults, tweetFields)
+    val result : MultiTweetLookupResponseEntity = apiInstance.spaceTweets(id, maxResults, tweetFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#spaceTweets")
@@ -758,7 +758,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiTweetLookupResponse**](MultiTweetLookupResponse.md)
+[**MultiTweetLookupResponseEntity**](MultiTweetLookupResponseEntity.md)
 
 ### Authorization
 
@@ -775,7 +775,7 @@ Configure OAuth2UserToken:
 
 <a name="tweetCountsFullArchiveSearch"></a>
 # **tweetCountsFullArchiveSearch**
-> TweetCountsResponse tweetCountsFullArchiveSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
+> TweetCountsResponseEntity tweetCountsFullArchiveSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
 
 Full archive search counts
 
@@ -795,9 +795,9 @@ val sinceId : kotlin.String = sinceId_example // kotlin.String | Returns results
 val untilId : kotlin.String = untilId_example // kotlin.String | Returns results with a Tweet ID less than (that is, older than) the specified ID.
 val nextToken : kotlin.String = nextToken_example // kotlin.String | This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.
-val granularity : Granularity =  // Granularity | The granularity for the search counts results.
+val granularity : GranularityEntity =  // GranularityEntity | The granularity for the search counts results.
 try {
-    val result : TweetCountsResponse = apiInstance.tweetCountsFullArchiveSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
+    val result : TweetCountsResponseEntity = apiInstance.tweetCountsFullArchiveSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#tweetCountsFullArchiveSearch")
@@ -819,11 +819,11 @@ Name | Type | Description  | Notes
  **untilId** | **kotlin.String**| Returns results with a Tweet ID less than (that is, older than) the specified ID. | [optional]
  **nextToken** | **kotlin.String**| This parameter is used to get the next &#39;page&#39; of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified. | [optional]
  **paginationToken** | **kotlin.String**| This parameter is used to get the next &#39;page&#39; of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified. | [optional]
- **granularity** | [**Granularity**](.md)| The granularity for the search counts results. | [optional] [default to hour] [enum: minute, hour, day]
+ **granularity** | [**GranularityEntity**](.md)| The granularity for the search counts results. | [optional] [default to hour] [enum: minute, hour, day]
 
 ### Return type
 
-[**TweetCountsResponse**](TweetCountsResponse.md)
+[**TweetCountsResponseEntity**](TweetCountsResponseEntity.md)
 
 ### Authorization
 
@@ -838,7 +838,7 @@ Configure BearerToken:
 
 <a name="tweetCountsRecentSearch"></a>
 # **tweetCountsRecentSearch**
-> TweetCountsResponse tweetCountsRecentSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
+> TweetCountsResponseEntity tweetCountsRecentSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
 
 Recent search counts
 
@@ -858,9 +858,9 @@ val sinceId : kotlin.String = sinceId_example // kotlin.String | Returns results
 val untilId : kotlin.String = untilId_example // kotlin.String | Returns results with a Tweet ID less than (that is, older than) the specified ID.
 val nextToken : kotlin.String = nextToken_example // kotlin.String | This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This parameter is used to get the next 'page' of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified.
-val granularity : Granularity =  // Granularity | The granularity for the search counts results.
+val granularity : GranularityEntity =  // GranularityEntity | The granularity for the search counts results.
 try {
-    val result : TweetCountsResponse = apiInstance.tweetCountsRecentSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
+    val result : TweetCountsResponseEntity = apiInstance.tweetCountsRecentSearch(query, startTime, endTime, sinceId, untilId, nextToken, paginationToken, granularity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#tweetCountsRecentSearch")
@@ -882,11 +882,11 @@ Name | Type | Description  | Notes
  **untilId** | **kotlin.String**| Returns results with a Tweet ID less than (that is, older than) the specified ID. | [optional]
  **nextToken** | **kotlin.String**| This parameter is used to get the next &#39;page&#39; of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified. | [optional]
  **paginationToken** | **kotlin.String**| This parameter is used to get the next &#39;page&#39; of results. The value used with the parameter is pulled directly from the response provided by the API, and should not be modified. | [optional]
- **granularity** | [**Granularity**](.md)| The granularity for the search counts results. | [optional] [default to hour] [enum: minute, hour, day]
+ **granularity** | [**GranularityEntity**](.md)| The granularity for the search counts results. | [optional] [default to hour] [enum: minute, hour, day]
 
 ### Return type
 
-[**TweetCountsResponse**](TweetCountsResponse.md)
+[**TweetCountsResponseEntity**](TweetCountsResponseEntity.md)
 
 ### Authorization
 
@@ -901,7 +901,7 @@ Configure BearerToken:
 
 <a name="tweetsFullarchiveSearch"></a>
 # **tweetsFullarchiveSearch**
-> TweetSearchResponse tweetsFullarchiveSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> TweetSearchResponseEntity tweetsFullarchiveSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Full-archive search
 
@@ -930,7 +930,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : TweetSearchResponse = apiInstance.tweetsFullarchiveSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : TweetSearchResponseEntity = apiInstance.tweetsFullarchiveSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#tweetsFullarchiveSearch")
@@ -963,7 +963,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TweetSearchResponse**](TweetSearchResponse.md)
+[**TweetSearchResponseEntity**](TweetSearchResponseEntity.md)
 
 ### Authorization
 
@@ -978,7 +978,7 @@ Configure BearerToken:
 
 <a name="tweetsRecentSearch"></a>
 # **tweetsRecentSearch**
-> TweetSearchResponse tweetsRecentSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> TweetSearchResponseEntity tweetsRecentSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Recent search
 
@@ -1007,7 +1007,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : TweetSearchResponse = apiInstance.tweetsRecentSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : TweetSearchResponseEntity = apiInstance.tweetsRecentSearch(query, startTime, endTime, sinceId, untilId, maxResults, sortOrder, nextToken, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#tweetsRecentSearch")
@@ -1040,7 +1040,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TweetSearchResponse**](TweetSearchResponse.md)
+[**TweetSearchResponseEntity**](TweetSearchResponseEntity.md)
 
 ### Authorization
 
@@ -1057,7 +1057,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdLike"></a>
 # **usersIdLike**
-> UsersLikesCreateResponse usersIdLike(id, usersLikesCreateRequest)
+> UsersLikesCreateResponseEntity usersIdLike(id, usersLikesCreateRequestEntity)
 
 Causes the user (in the path) to like the specified tweet
 
@@ -1071,9 +1071,9 @@ Causes the user (in the path) to like the specified tweet. The user in the path 
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to like the tweet
-val usersLikesCreateRequest : UsersLikesCreateRequest =  // UsersLikesCreateRequest | 
+val usersLikesCreateRequestEntity : UsersLikesCreateRequestEntity =  // UsersLikesCreateRequestEntity | 
 try {
-    val result : UsersLikesCreateResponse = apiInstance.usersIdLike(id, usersLikesCreateRequest)
+    val result : UsersLikesCreateResponseEntity = apiInstance.usersIdLike(id, usersLikesCreateRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdLike")
@@ -1089,11 +1089,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the user that is requesting to like the tweet |
- **usersLikesCreateRequest** | [**UsersLikesCreateRequest**](UsersLikesCreateRequest.md)|  | [optional]
+ **usersLikesCreateRequestEntity** | [**UsersLikesCreateRequestEntity**](UsersLikesCreateRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**UsersLikesCreateResponse**](UsersLikesCreateResponse.md)
+[**UsersLikesCreateResponseEntity**](UsersLikesCreateResponseEntity.md)
 
 ### Authorization
 
@@ -1108,7 +1108,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdLikedTweets"></a>
 # **usersIdLikedTweets**
-> InlineResponse2002 usersIdLikedTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> InlineResponse2002Entity usersIdLikedTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Returns Tweet objects liked by the provided User ID
 
@@ -1131,7 +1131,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : InlineResponse2002 = apiInstance.usersIdLikedTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : InlineResponse2002Entity = apiInstance.usersIdLikedTweets(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdLikedTweets")
@@ -1158,7 +1158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2002Entity**](InlineResponse2002Entity.md)
 
 ### Authorization
 
@@ -1175,7 +1175,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdMentions"></a>
 # **usersIdMentions**
-> GenericTweetsTimelineResponse usersIdMentions(id, sinceId, untilId, maxResults, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> GenericTweetsTimelineResponseEntity usersIdMentions(id, sinceId, untilId, maxResults, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 User mention timeline by User ID
 
@@ -1202,7 +1202,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : GenericTweetsTimelineResponse = apiInstance.usersIdMentions(id, sinceId, untilId, maxResults, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : GenericTweetsTimelineResponseEntity = apiInstance.usersIdMentions(id, sinceId, untilId, maxResults, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdMentions")
@@ -1233,7 +1233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericTweetsTimelineResponse**](GenericTweetsTimelineResponse.md)
+[**GenericTweetsTimelineResponseEntity**](GenericTweetsTimelineResponseEntity.md)
 
 ### Authorization
 
@@ -1250,7 +1250,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdRetweets"></a>
 # **usersIdRetweets**
-> UsersRetweetsCreateResponse usersIdRetweets(id, usersRetweetsCreateRequest)
+> UsersRetweetsCreateResponseEntity usersIdRetweets(id, usersRetweetsCreateRequestEntity)
 
 Causes the user (in the path) to retweet the specified tweet
 
@@ -1264,9 +1264,9 @@ Causes the user (in the path) to retweet the specified tweet. The user in the pa
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to retweet the tweet
-val usersRetweetsCreateRequest : UsersRetweetsCreateRequest =  // UsersRetweetsCreateRequest | 
+val usersRetweetsCreateRequestEntity : UsersRetweetsCreateRequestEntity =  // UsersRetweetsCreateRequestEntity | 
 try {
-    val result : UsersRetweetsCreateResponse = apiInstance.usersIdRetweets(id, usersRetweetsCreateRequest)
+    val result : UsersRetweetsCreateResponseEntity = apiInstance.usersIdRetweets(id, usersRetweetsCreateRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdRetweets")
@@ -1282,11 +1282,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the user that is requesting to retweet the tweet |
- **usersRetweetsCreateRequest** | [**UsersRetweetsCreateRequest**](UsersRetweetsCreateRequest.md)|  | [optional]
+ **usersRetweetsCreateRequestEntity** | [**UsersRetweetsCreateRequestEntity**](UsersRetweetsCreateRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**UsersRetweetsCreateResponse**](UsersRetweetsCreateResponse.md)
+[**UsersRetweetsCreateResponseEntity**](UsersRetweetsCreateResponseEntity.md)
 
 ### Authorization
 
@@ -1301,7 +1301,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdTweets"></a>
 # **usersIdTweets**
-> GenericTweetsTimelineResponse usersIdTweets(id, sinceId, untilId, maxResults, exclude, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> GenericTweetsTimelineResponseEntity usersIdTweets(id, sinceId, untilId, maxResults, exclude, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 User Tweets timeline by User ID
 
@@ -1329,7 +1329,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : GenericTweetsTimelineResponse = apiInstance.usersIdTweets(id, sinceId, untilId, maxResults, exclude, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : GenericTweetsTimelineResponseEntity = apiInstance.usersIdTweets(id, sinceId, untilId, maxResults, exclude, paginationToken, startTime, endTime, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdTweets")
@@ -1361,7 +1361,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericTweetsTimelineResponse**](GenericTweetsTimelineResponse.md)
+[**GenericTweetsTimelineResponseEntity**](GenericTweetsTimelineResponseEntity.md)
 
 ### Authorization
 
@@ -1378,7 +1378,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdUnlike"></a>
 # **usersIdUnlike**
-> UsersLikesDeleteResponse usersIdUnlike(id, tweetId)
+> UsersLikesDeleteResponseEntity usersIdUnlike(id, tweetId)
 
 Causes the user (in the path) to unlike the specified tweet
 
@@ -1394,7 +1394,7 @@ val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to unlike the tweet
 val tweetId : kotlin.String = tweetId_example // kotlin.String | The ID of the tweet that the user is requesting to unlike
 try {
-    val result : UsersLikesDeleteResponse = apiInstance.usersIdUnlike(id, tweetId)
+    val result : UsersLikesDeleteResponseEntity = apiInstance.usersIdUnlike(id, tweetId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdUnlike")
@@ -1414,7 +1414,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UsersLikesDeleteResponse**](UsersLikesDeleteResponse.md)
+[**UsersLikesDeleteResponseEntity**](UsersLikesDeleteResponseEntity.md)
 
 ### Authorization
 
@@ -1429,7 +1429,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdUnretweets"></a>
 # **usersIdUnretweets**
-> UsersRetweetsDeleteResponse usersIdUnretweets(id, sourceTweetId)
+> UsersRetweetsDeleteResponseEntity usersIdUnretweets(id, sourceTweetId)
 
 Causes the user (in the path) to unretweet the specified tweet
 
@@ -1445,7 +1445,7 @@ val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to unretweet the tweet
 val sourceTweetId : kotlin.String = sourceTweetId_example // kotlin.String | The ID of the tweet that the user is requesting to unretweet
 try {
-    val result : UsersRetweetsDeleteResponse = apiInstance.usersIdUnretweets(id, sourceTweetId)
+    val result : UsersRetweetsDeleteResponseEntity = apiInstance.usersIdUnretweets(id, sourceTweetId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TweetsApi#usersIdUnretweets")
@@ -1465,7 +1465,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UsersRetweetsDeleteResponse**](UsersRetweetsDeleteResponse.md)
+[**UsersRetweetsDeleteResponseEntity**](UsersRetweetsDeleteResponseEntity.md)
 
 ### Authorization
 

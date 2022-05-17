@@ -1,10 +1,10 @@
 
-# InvalidRequestProblemAllOf
+# InvalidRequestProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**errors** | [**kotlin.collections.List&lt;InvalidRequestProblemAllOfErrors&gt;**](InvalidRequestProblemAllOfErrors.md) |  |  [optional]
+**errors** | [**kotlin.collections.List&lt;InvalidRequestProblemAllOfErrorsEntity&gt;**](InvalidRequestProblemAllOfErrorsEntity.md) |  |  [optional]
 
 
 

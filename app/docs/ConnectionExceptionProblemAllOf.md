@@ -1,5 +1,5 @@
 
-# ConnectionExceptionProblemAllOf
+# ConnectionExceptionProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

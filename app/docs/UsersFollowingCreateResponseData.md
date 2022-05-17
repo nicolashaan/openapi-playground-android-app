@@ -1,5 +1,5 @@
 
-# UsersFollowingCreateResponseData
+# UsersFollowingCreateResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

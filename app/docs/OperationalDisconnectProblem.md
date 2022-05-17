@@ -1,5 +1,5 @@
 
-# OperationalDisconnectProblem
+# OperationalDisconnectProblemEntity
 
 ## Properties
 Name | Type | Description | Notes

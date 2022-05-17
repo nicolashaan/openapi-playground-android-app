@@ -1,5 +1,5 @@
 
-# ListFollowedResponseData
+# ListFollowedResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

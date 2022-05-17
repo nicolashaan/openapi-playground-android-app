@@ -1,11 +1,11 @@
 
-# AddOrDeleteRulesRequest
+# AddOrDeleteRulesRequestEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**add** | [**kotlin.collections.List&lt;RuleNoId&gt;**](RuleNoId.md) |  | 
-**delete** | [**DeleteRulesRequestDelete**](DeleteRulesRequestDelete.md) |  | 
+**add** | [**kotlin.collections.List&lt;RuleNoIdEntity&gt;**](RuleNoIdEntity.md) |  | 
+**delete** | [**DeleteRulesRequestDeleteEntity**](DeleteRulesRequestDeleteEntity.md) |  | 
 
 
 

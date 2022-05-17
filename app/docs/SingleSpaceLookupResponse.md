@@ -1,12 +1,12 @@
 
-# SingleSpaceLookupResponse
+# SingleSpaceLookupResponseEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**&#x60;data&#x60;** | [**Space**](Space.md) |  |  [optional]
-**includes** | [**Expansions**](Expansions.md) |  |  [optional]
-**errors** | [**kotlin.collections.List&lt;Problem&gt;**](Problem.md) |  |  [optional]
+**&#x60;data&#x60;** | [**SpaceEntity**](SpaceEntity.md) |  |  [optional]
+**includes** | [**ExpansionsEntity**](ExpansionsEntity.md) |  |  [optional]
+**errors** | [**kotlin.collections.List&lt;ProblemEntity&gt;**](ProblemEntity.md) |  |  [optional]
 
 
 

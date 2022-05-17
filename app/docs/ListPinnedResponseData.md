@@ -1,5 +1,5 @@
 
-# ListPinnedResponseData
+# ListPinnedResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

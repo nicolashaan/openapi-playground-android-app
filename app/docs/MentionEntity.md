@@ -1,5 +1,5 @@
 
-# MentionEntity
+# MentionEntityEntity
 
 ## Properties
 Name | Type | Description | Notes

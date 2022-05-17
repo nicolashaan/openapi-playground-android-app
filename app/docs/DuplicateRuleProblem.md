@@ -1,5 +1,5 @@
 
-# DuplicateRuleProblem
+# DuplicateRuleProblemEntity
 
 ## Properties
 Name | Type | Description | Notes

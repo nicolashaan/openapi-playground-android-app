@@ -1,5 +1,5 @@
 
-# PlaceType
+# PlaceTypeEntity
 
 ## Enum
 

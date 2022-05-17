@@ -1,5 +1,5 @@
 
-# ReplySettings
+# ReplySettingsEntity
 
 ## Enum
 

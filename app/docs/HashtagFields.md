@@ -1,5 +1,5 @@
 
-# HashtagFields
+# HashtagFieldsEntity
 
 ## Properties
 Name | Type | Description | Notes

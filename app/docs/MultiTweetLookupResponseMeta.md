@@ -1,5 +1,5 @@
 
-# MultiTweetLookupResponseMeta
+# MultiTweetLookupResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

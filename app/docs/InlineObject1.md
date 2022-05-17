@@ -1,5 +1,5 @@
 
-# InlineObject1
+# InlineObject1Entity
 
 ## Properties
 Name | Type | Description | Notes

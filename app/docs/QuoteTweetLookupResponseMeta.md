@@ -1,5 +1,5 @@
 
-# QuoteTweetLookupResponseMeta
+# QuoteTweetLookupResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

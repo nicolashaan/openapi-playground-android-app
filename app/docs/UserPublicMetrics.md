@@ -1,5 +1,5 @@
 
-# UserPublicMetrics
+# UserPublicMetricsEntity
 
 ## Properties
 Name | Type | Description | Notes

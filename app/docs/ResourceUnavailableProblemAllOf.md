@@ -1,5 +1,5 @@
 
-# ResourceUnavailableProblemAllOf
+# ResourceUnavailableProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

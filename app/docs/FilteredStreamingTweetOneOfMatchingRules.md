@@ -1,5 +1,5 @@
 
-# FilteredStreamingTweetOneOfMatchingRules
+# FilteredStreamingTweetOneOfMatchingRulesEntity
 
 ## Properties
 Name | Type | Description | Notes

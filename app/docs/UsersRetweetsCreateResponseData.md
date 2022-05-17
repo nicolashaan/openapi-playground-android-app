@@ -1,5 +1,5 @@
 
-# UsersRetweetsCreateResponseData
+# UsersRetweetsCreateResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

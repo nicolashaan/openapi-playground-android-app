@@ -1,5 +1,5 @@
 
-# Point
+# PointEntity
 
 ## Properties
 Name | Type | Description | Notes

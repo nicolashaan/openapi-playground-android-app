@@ -1,5 +1,5 @@
 
-# TweetPromotedMetrics
+# TweetPromotedMetricsEntity
 
 ## Properties
 Name | Type | Description | Notes

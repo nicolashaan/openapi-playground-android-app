@@ -1,5 +1,5 @@
 
-# MultiListResponseMeta
+# MultiListResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

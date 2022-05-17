@@ -1,5 +1,5 @@
 
-# VideoAllOfOrganicMetrics
+# VideoAllOfOrganicMetricsEntity
 
 ## Properties
 Name | Type | Description | Notes

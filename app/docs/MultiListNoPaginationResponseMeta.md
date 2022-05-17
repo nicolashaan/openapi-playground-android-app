@@ -1,5 +1,5 @@
 
-# MultiListNoPaginationResponseMeta
+# MultiListNoPaginationResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

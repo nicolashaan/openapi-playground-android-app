@@ -1,5 +1,5 @@
 
-# FieldUnauthorizedProblemAllOf
+# FieldUnauthorizedProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

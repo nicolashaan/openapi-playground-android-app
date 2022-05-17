@@ -1,5 +1,5 @@
 
-# ClientForbiddenProblemAllOf
+# ClientForbiddenProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

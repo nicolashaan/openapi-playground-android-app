@@ -1,5 +1,5 @@
 
-# DuplicateRuleProblemAllOf
+# DuplicateRuleProblemAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

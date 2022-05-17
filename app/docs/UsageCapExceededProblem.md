@@ -1,5 +1,5 @@
 
-# UsageCapExceededProblem
+# UsageCapExceededProblemEntity
 
 ## Properties
 Name | Type | Description | Notes

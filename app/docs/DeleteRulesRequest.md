@@ -1,10 +1,10 @@
 
-# DeleteRulesRequest
+# DeleteRulesRequestEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**delete** | [**DeleteRulesRequestDelete**](DeleteRulesRequestDelete.md) |  | 
+**delete** | [**DeleteRulesRequestDeleteEntity**](DeleteRulesRequestDeleteEntity.md) |  | 
 
 
 

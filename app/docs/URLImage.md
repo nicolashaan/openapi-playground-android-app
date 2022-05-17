@@ -1,5 +1,5 @@
 
-# URLImage
+# URLImageEntity
 
 ## Properties
 Name | Type | Description | Notes

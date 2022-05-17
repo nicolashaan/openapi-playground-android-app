@@ -1,5 +1,5 @@
 
-# ContextAnnotationDomainFields
+# ContextAnnotationDomainFieldsEntity
 
 ## Properties
 Name | Type | Description | Notes

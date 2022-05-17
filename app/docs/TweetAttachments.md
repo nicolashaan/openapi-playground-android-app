@@ -1,5 +1,5 @@
 
-# TweetAttachments
+# TweetAttachmentsEntity
 
 ## Properties
 Name | Type | Description | Notes

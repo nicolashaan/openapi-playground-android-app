@@ -1,5 +1,5 @@
 
-# TweetOrganicMetrics
+# TweetOrganicMetricsEntity
 
 ## Properties
 Name | Type | Description | Notes

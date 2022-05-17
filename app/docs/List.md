@@ -1,5 +1,5 @@
 
-# List
+# ListEntity
 
 ## Properties
 Name | Type | Description | Notes

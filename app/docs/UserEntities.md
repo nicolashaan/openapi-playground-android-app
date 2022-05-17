@@ -1,11 +1,11 @@
 
-# UserEntities
+# UserEntitiesEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**url** | [**UserEntitiesUrl**](UserEntitiesUrl.md) |  |  [optional]
-**description** | [**FullTextEntities**](FullTextEntities.md) |  |  [optional]
+**url** | [**UserEntitiesUrlEntity**](UserEntitiesUrlEntity.md) |  |  [optional]
+**description** | [**FullTextEntitiesEntity**](FullTextEntitiesEntity.md) |  |  [optional]
 
 
 

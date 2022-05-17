@@ -1,5 +1,5 @@
 
-# UsersBlockingMutationResponseData
+# UsersBlockingMutationResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

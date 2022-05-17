@@ -1,5 +1,5 @@
 
-# AddBookmarkRequest
+# AddBookmarkRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

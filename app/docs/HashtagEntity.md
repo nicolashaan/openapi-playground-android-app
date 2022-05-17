@@ -1,5 +1,5 @@
 
-# HashtagEntity
+# HashtagEntityEntity
 
 ## Properties
 Name | Type | Description | Notes

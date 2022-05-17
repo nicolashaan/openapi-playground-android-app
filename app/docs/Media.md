@@ -1,5 +1,5 @@
 
-# Media
+# MediaEntity
 
 ## Properties
 Name | Type | Description | Notes

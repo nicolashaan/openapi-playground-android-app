@@ -1,5 +1,5 @@
 
-# GenericTweetsTimelineResponseMeta
+# GenericTweetsTimelineResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

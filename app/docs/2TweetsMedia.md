@@ -1,5 +1,5 @@
 
-# Model2TweetsMedia
+# Model2TweetsMediaEntity
 
 ## Properties
 Name | Type | Description | Notes

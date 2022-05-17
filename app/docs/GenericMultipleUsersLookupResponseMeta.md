@@ -1,5 +1,5 @@
 
-# GenericMultipleUsersLookupResponseMeta
+# GenericMultipleUsersLookupResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

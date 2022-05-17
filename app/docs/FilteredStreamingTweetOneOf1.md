@@ -1,10 +1,10 @@
 
-# FilteredStreamingTweetOneOf1
+# FilteredStreamingTweetOneOf1Entity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**errors** | [**kotlin.collections.List&lt;Problem&gt;**](Problem.md) |  | 
+**errors** | [**kotlin.collections.List&lt;ProblemEntity&gt;**](ProblemEntity.md) |  | 
 
 
 

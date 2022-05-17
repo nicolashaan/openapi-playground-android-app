@@ -1,5 +1,5 @@
 
-# Photo
+# PhotoEntity
 
 ## Properties
 Name | Type | Description | Notes

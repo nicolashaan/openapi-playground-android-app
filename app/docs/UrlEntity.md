@@ -1,5 +1,5 @@
 
-# UrlEntity
+# UrlEntityEntity
 
 ## Properties
 Name | Type | Description | Notes
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **status** | **kotlin.Int** | HTTP Status Code. |  [optional]
 **title** | **kotlin.String** | Title of the page the URL points to. |  [optional]
 **description** | **kotlin.String** | Description of the URL landing page. |  [optional]
-**images** | [**kotlin.collections.List&lt;URLImage&gt;**](URLImage.md) |  |  [optional]
+**images** | [**kotlin.collections.List&lt;URLImageEntity&gt;**](URLImageEntity.md) |  |  [optional]
 **mediaKey** | **kotlin.String** | The Media Key identifier for this attachment. |  [optional]
 
 

@@ -1,5 +1,5 @@
 
-# TweetCountsResponseMeta
+# TweetCountsResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

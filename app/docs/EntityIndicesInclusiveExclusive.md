@@ -1,5 +1,5 @@
 
-# EntityIndicesInclusiveExclusive
+# EntityIndicesInclusiveExclusiveEntity
 
 ## Properties
 Name | Type | Description | Notes

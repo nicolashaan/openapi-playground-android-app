@@ -1,5 +1,5 @@
 
-# VideoAllOfNonPublicMetrics
+# VideoAllOfNonPublicMetricsEntity
 
 ## Properties
 Name | Type | Description | Notes

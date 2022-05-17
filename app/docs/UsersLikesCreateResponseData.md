@@ -1,5 +1,5 @@
 
-# UsersLikesCreateResponseData
+# UsersLikesCreateResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,5 +1,5 @@
 
-# TweetCreateResponseData
+# TweetCreateResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

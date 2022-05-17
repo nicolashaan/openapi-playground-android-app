@@ -1,5 +1,5 @@
 
-# Space
+# SpaceEntity
 
 ## Properties
 Name | Type | Description | Notes
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **invitedUserIds** | **kotlin.collections.List&lt;kotlin.String&gt;** | An array of user ids for people who were invited to a space |  [optional]
 **scheduledStart** | [**java.time.OffsetDateTime**](java.time.OffsetDateTime.md) | A date time stamp for when a space is scheduled to begin |  [optional]
 **endedAt** | [**java.time.OffsetDateTime**](java.time.OffsetDateTime.md) | End time of the space |  [optional]
-**topics** | [**kotlin.collections.List&lt;SpaceTopics&gt;**](SpaceTopics.md) | The topics of a space, as selected by its creator |  [optional]
+**topics** | [**kotlin.collections.List&lt;SpaceTopicsEntity&gt;**](SpaceTopicsEntity.md) | The topics of a space, as selected by its creator |  [optional]
 **subscriberCount** | **kotlin.Int** | The number of people who have either purchased a ticket or set a reminder for this space. |  [optional]
 
 

@@ -1,5 +1,5 @@
 
-# DeleteRulesRequestDelete
+# DeleteRulesRequestDeleteEntity
 
 ## Properties
 Name | Type | Description | Notes

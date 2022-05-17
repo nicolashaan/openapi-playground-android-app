@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="findSpaceById"></a>
 # **findSpaceById**
-> SingleSpaceLookupResponse findSpaceById(id, spaceFields, expansions)
+> SingleSpaceLookupResponseEntity findSpaceById(id, spaceFields, expansions)
 
 Space lookup by Space ID
 
@@ -31,7 +31,7 @@ val id : kotlin.String = id_example // kotlin.String | The space id to be retrie
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 try {
-    val result : SingleSpaceLookupResponse = apiInstance.findSpaceById(id, spaceFields, expansions)
+    val result : SingleSpaceLookupResponseEntity = apiInstance.findSpaceById(id, spaceFields, expansions)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SpacesApi#findSpaceById")
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleSpaceLookupResponse**](SingleSpaceLookupResponse.md)
+[**SingleSpaceLookupResponseEntity**](SingleSpaceLookupResponseEntity.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Configure OAuth2UserToken:
 
 <a name="findSpacesByCreatorIds"></a>
 # **findSpacesByCreatorIds**
-> MultiSpaceLookupResponse findSpacesByCreatorIds(userIds, spaceFields, expansions)
+> MultiSpaceLookupResponseEntity findSpacesByCreatorIds(userIds, spaceFields, expansions)
 
 Space lookup by their creators
 
@@ -86,7 +86,7 @@ val userIds : kotlin.collections.List<kotlin.String> =  // kotlin.collections.Li
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 try {
-    val result : MultiSpaceLookupResponse = apiInstance.findSpacesByCreatorIds(userIds, spaceFields, expansions)
+    val result : MultiSpaceLookupResponseEntity = apiInstance.findSpacesByCreatorIds(userIds, spaceFields, expansions)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SpacesApi#findSpacesByCreatorIds")
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiSpaceLookupResponse**](MultiSpaceLookupResponse.md)
+[**MultiSpaceLookupResponseEntity**](MultiSpaceLookupResponseEntity.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ Configure OAuth2UserToken:
 
 <a name="findSpacesByIds"></a>
 # **findSpacesByIds**
-> MultiSpaceLookupResponse findSpacesByIds(ids, spaceFields, expansions)
+> MultiSpaceLookupResponseEntity findSpacesByIds(ids, spaceFields, expansions)
 
 Space lookup up Space IDs
 
@@ -141,7 +141,7 @@ val ids : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<k
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 try {
-    val result : MultiSpaceLookupResponse = apiInstance.findSpacesByIds(ids, spaceFields, expansions)
+    val result : MultiSpaceLookupResponseEntity = apiInstance.findSpacesByIds(ids, spaceFields, expansions)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SpacesApi#findSpacesByIds")
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiSpaceLookupResponse**](MultiSpaceLookupResponse.md)
+[**MultiSpaceLookupResponseEntity**](MultiSpaceLookupResponseEntity.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Configure OAuth2UserToken:
 
 <a name="searchSpaces"></a>
 # **searchSpaces**
-> MultiSpaceLookupResponse searchSpaces(query, state, maxResults, spaceFields, expansions)
+> MultiSpaceLookupResponseEntity searchSpaces(query, state, maxResults, spaceFields, expansions)
 
 Search for Spaces
 
@@ -198,7 +198,7 @@ val maxResults : kotlin.Int = 56 // kotlin.Int | The number of results to return
 val spaceFields : kotlin.collections.Set<kotlin.String> = ["created_at","creator_id","host_ids","invited_user_ids","is_ticketed","lang","participant_count","scheduled_start","speaker_ids","started_at","title","updated_at"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Space fields to display.
 val expansions : kotlin.collections.Set<kotlin.String> = ["creator_id","host_ids","invited_user_ids","speaker_ids"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 try {
-    val result : MultiSpaceLookupResponse = apiInstance.searchSpaces(query, state, maxResults, spaceFields, expansions)
+    val result : MultiSpaceLookupResponseEntity = apiInstance.searchSpaces(query, state, maxResults, spaceFields, expansions)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SpacesApi#searchSpaces")
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiSpaceLookupResponse**](MultiSpaceLookupResponse.md)
+[**MultiSpaceLookupResponseEntity**](MultiSpaceLookupResponseEntity.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ Configure OAuth2UserToken:
 
 <a name="spaceBuyers"></a>
 # **spaceBuyers**
-> MultiUserLookupResponse spaceBuyers(id, userFields)
+> MultiUserLookupResponseEntity spaceBuyers(id, userFields)
 
 Retrieve the list of users who purchased a ticket to the given space
 
@@ -254,7 +254,7 @@ val apiInstance = SpacesApi()
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiUserLookupResponse = apiInstance.spaceBuyers(id, userFields)
+    val result : MultiUserLookupResponseEntity = apiInstance.spaceBuyers(id, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SpacesApi#spaceBuyers")
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiUserLookupResponse**](MultiUserLookupResponse.md)
+[**MultiUserLookupResponseEntity**](MultiUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -291,7 +291,7 @@ Configure OAuth2UserToken:
 
 <a name="spaceTweets"></a>
 # **spaceTweets**
-> MultiTweetLookupResponse spaceTweets(id, maxResults, tweetFields)
+> MultiTweetLookupResponseEntity spaceTweets(id, maxResults, tweetFields)
 
 Retrieve tweets from a Space
 
@@ -308,7 +308,7 @@ val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from whic
 val maxResults : kotlin.Int = 56 // kotlin.Int | The number of tweets to fetch from the provided space. If not provided, the value will default to the maximum of 100
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 try {
-    val result : MultiTweetLookupResponse = apiInstance.spaceTweets(id, maxResults, tweetFields)
+    val result : MultiTweetLookupResponseEntity = apiInstance.spaceTweets(id, maxResults, tweetFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SpacesApi#spaceTweets")
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiTweetLookupResponse**](MultiTweetLookupResponse.md)
+[**MultiTweetLookupResponseEntity**](MultiTweetLookupResponseEntity.md)
 
 ### Authorization
 

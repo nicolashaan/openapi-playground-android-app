@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 <a name="findMyUser"></a>
 # **findMyUser**
-> SingleUserLookupResponse findMyUser(expansions, tweetFields, userFields)
+> SingleUserLookupResponseEntity findMyUser(expansions, tweetFields, userFields)
 
 User lookup me
 
@@ -44,7 +44,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : SingleUserLookupResponse = apiInstance.findMyUser(expansions, tweetFields, userFields)
+    val result : SingleUserLookupResponseEntity = apiInstance.findMyUser(expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#findMyUser")
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleUserLookupResponse**](SingleUserLookupResponse.md)
+[**SingleUserLookupResponseEntity**](SingleUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ Configure OAuth2UserToken:
 
 <a name="findUserById"></a>
 # **findUserById**
-> SingleUserLookupResponse findUserById(id, expansions, tweetFields, userFields)
+> SingleUserLookupResponseEntity findUserById(id, expansions, tweetFields, userFields)
 
 User lookup by ID
 
@@ -98,7 +98,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : SingleUserLookupResponse = apiInstance.findUserById(id, expansions, tweetFields, userFields)
+    val result : SingleUserLookupResponseEntity = apiInstance.findUserById(id, expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#findUserById")
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleUserLookupResponse**](SingleUserLookupResponse.md)
+[**SingleUserLookupResponseEntity**](SingleUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Configure OAuth2UserToken:
 
 <a name="findUserByUsername"></a>
 # **findUserByUsername**
-> SingleUserLookupResponse findUserByUsername(username, expansions, tweetFields, userFields)
+> SingleUserLookupResponseEntity findUserByUsername(username, expansions, tweetFields, userFields)
 
 User lookup by username
 
@@ -155,7 +155,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : SingleUserLookupResponse = apiInstance.findUserByUsername(username, expansions, tweetFields, userFields)
+    val result : SingleUserLookupResponseEntity = apiInstance.findUserByUsername(username, expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#findUserByUsername")
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleUserLookupResponse**](SingleUserLookupResponse.md)
+[**SingleUserLookupResponseEntity**](SingleUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Configure OAuth2UserToken:
 
 <a name="findUsersById"></a>
 # **findUsersById**
-> MultiUserLookupResponse findUsersById(ids, expansions, tweetFields, userFields)
+> MultiUserLookupResponseEntity findUsersById(ids, expansions, tweetFields, userFields)
 
 User lookup by IDs
 
@@ -212,7 +212,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiUserLookupResponse = apiInstance.findUsersById(ids, expansions, tweetFields, userFields)
+    val result : MultiUserLookupResponseEntity = apiInstance.findUsersById(ids, expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#findUsersById")
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiUserLookupResponse**](MultiUserLookupResponse.md)
+[**MultiUserLookupResponseEntity**](MultiUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ Configure OAuth2UserToken:
 
 <a name="findUsersByUsername"></a>
 # **findUsersByUsername**
-> MultiUserLookupResponse findUsersByUsername(usernames, expansions, tweetFields, userFields)
+> MultiUserLookupResponseEntity findUsersByUsername(usernames, expansions, tweetFields, userFields)
 
 User lookup by usernames
 
@@ -269,7 +269,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiUserLookupResponse = apiInstance.findUsersByUsername(usernames, expansions, tweetFields, userFields)
+    val result : MultiUserLookupResponseEntity = apiInstance.findUsersByUsername(usernames, expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#findUsersByUsername")
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiUserLookupResponse**](MultiUserLookupResponse.md)
+[**MultiUserLookupResponseEntity**](MultiUserLookupResponseEntity.md)
 
 ### Authorization
 
@@ -308,7 +308,7 @@ Configure OAuth2UserToken:
 
 <a name="listGetFollowers"></a>
 # **listGetFollowers**
-> ListLookupMultipleUsersLookupResponse listGetFollowers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
+> ListLookupMultipleUsersLookupResponseEntity listGetFollowers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
 
 Returns user objects that follow a List by the provided List ID
 
@@ -328,7 +328,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : ListLookupMultipleUsersLookupResponse = apiInstance.listGetFollowers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
+    val result : ListLookupMultipleUsersLookupResponseEntity = apiInstance.listGetFollowers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#listGetFollowers")
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListLookupMultipleUsersLookupResponse**](ListLookupMultipleUsersLookupResponse.md)
+[**ListLookupMultipleUsersLookupResponseEntity**](ListLookupMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ Configure OAuth2UserToken:
 
 <a name="listGetMembers"></a>
 # **listGetMembers**
-> ListLookupMultipleUsersLookupResponse listGetMembers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
+> ListLookupMultipleUsersLookupResponseEntity listGetMembers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
 
 Returns user objects that are members of a List by the provided List ID
 
@@ -389,7 +389,7 @@ val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // 
 val tweetFields : kotlin.collections.Set<kotlin.String> = ["created_at","author_id","entities","conversation_id","reply_settings","public_metrics"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Tweet fields to display.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : ListLookupMultipleUsersLookupResponse = apiInstance.listGetMembers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
+    val result : ListLookupMultipleUsersLookupResponseEntity = apiInstance.listGetMembers(id, maxResults, paginationToken, expansions, tweetFields, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#listGetMembers")
@@ -413,7 +413,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListLookupMultipleUsersLookupResponse**](ListLookupMultipleUsersLookupResponse.md)
+[**ListLookupMultipleUsersLookupResponseEntity**](ListLookupMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -430,7 +430,7 @@ Configure OAuth2UserToken:
 
 <a name="tweetsIdLikingUsers"></a>
 # **tweetsIdLikingUsers**
-> GenericMultipleUsersLookupResponse tweetsIdLikingUsers(id, maxResults, paginationToken)
+> GenericMultipleUsersLookupResponseEntity tweetsIdLikingUsers(id, maxResults, paginationToken)
 
 Returns user objects that have liked the provided Tweet ID
 
@@ -447,7 +447,7 @@ val id : kotlin.String = id_example // kotlin.String | The ID of the Tweet for w
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This parameter is used to get the next 'page' of results.
 try {
-    val result : GenericMultipleUsersLookupResponse = apiInstance.tweetsIdLikingUsers(id, maxResults, paginationToken)
+    val result : GenericMultipleUsersLookupResponseEntity = apiInstance.tweetsIdLikingUsers(id, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#tweetsIdLikingUsers")
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericMultipleUsersLookupResponse**](GenericMultipleUsersLookupResponse.md)
+[**GenericMultipleUsersLookupResponseEntity**](GenericMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -485,7 +485,7 @@ Configure OAuth2UserToken:
 
 <a name="tweetsIdRetweetingUsers"></a>
 # **tweetsIdRetweetingUsers**
-> GenericMultipleUsersLookupResponse tweetsIdRetweetingUsers(id, maxResults, paginationToken)
+> GenericMultipleUsersLookupResponseEntity tweetsIdRetweetingUsers(id, maxResults, paginationToken)
 
 Returns user objects that have retweeted the provided Tweet ID
 
@@ -502,7 +502,7 @@ val id : kotlin.String = id_example // kotlin.String | The ID of the Tweet for w
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This parameter is used to get the next 'page' of results.
 try {
-    val result : GenericMultipleUsersLookupResponse = apiInstance.tweetsIdRetweetingUsers(id, maxResults, paginationToken)
+    val result : GenericMultipleUsersLookupResponseEntity = apiInstance.tweetsIdRetweetingUsers(id, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#tweetsIdRetweetingUsers")
@@ -523,7 +523,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericMultipleUsersLookupResponse**](GenericMultipleUsersLookupResponse.md)
+[**GenericMultipleUsersLookupResponseEntity**](GenericMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdBlock"></a>
 # **usersIdBlock**
-> UsersBlockingMutationResponse usersIdBlock(id, inlineObject)
+> UsersBlockingMutationResponseEntity usersIdBlock(id, inlineObjectEntity)
 
 Block User by User ID
 
@@ -554,9 +554,9 @@ Causes the user (in the path) to block the target user. The user (in the path) m
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to block the target user
-val inlineObject : InlineObject =  // InlineObject | 
+val inlineObjectEntity : InlineObjectEntity =  // InlineObjectEntity | 
 try {
-    val result : UsersBlockingMutationResponse = apiInstance.usersIdBlock(id, inlineObject)
+    val result : UsersBlockingMutationResponseEntity = apiInstance.usersIdBlock(id, inlineObjectEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdBlock")
@@ -572,11 +572,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the user that is requesting to block the target user |
- **inlineObject** | [**InlineObject**](InlineObject.md)|  | [optional]
+ **inlineObjectEntity** | [**InlineObjectEntity**](InlineObjectEntity.md)|  | [optional]
 
 ### Return type
 
-[**UsersBlockingMutationResponse**](UsersBlockingMutationResponse.md)
+[**UsersBlockingMutationResponseEntity**](UsersBlockingMutationResponseEntity.md)
 
 ### Authorization
 
@@ -591,7 +591,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdBlocking"></a>
 # **usersIdBlocking**
-> GenericMultipleUsersLookupResponse usersIdBlocking(id, maxResults, paginationToken)
+> GenericMultipleUsersLookupResponseEntity usersIdBlocking(id, maxResults, paginationToken)
 
 Returns user objects that are blocked by provided user ID
 
@@ -608,7 +608,7 @@ val id : kotlin.String = id_example // kotlin.String | The ID of the user for wh
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This value is populated by passing the 'next_token' or 'previous_token' returned in a request to paginate through results.
 try {
-    val result : GenericMultipleUsersLookupResponse = apiInstance.usersIdBlocking(id, maxResults, paginationToken)
+    val result : GenericMultipleUsersLookupResponseEntity = apiInstance.usersIdBlocking(id, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdBlocking")
@@ -629,7 +629,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericMultipleUsersLookupResponse**](GenericMultipleUsersLookupResponse.md)
+[**GenericMultipleUsersLookupResponseEntity**](GenericMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -644,7 +644,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdFollow"></a>
 # **usersIdFollow**
-> UsersFollowingCreateResponse usersIdFollow(id, inlineObject2)
+> UsersFollowingCreateResponseEntity usersIdFollow(id, inlineObject2Entity)
 
 Follow User
 
@@ -658,9 +658,9 @@ Causes the user(in the path) to follow, or “request to follow” for protected
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to follow the target user
-val inlineObject2 : InlineObject2 =  // InlineObject2 | 
+val inlineObject2Entity : InlineObject2Entity =  // InlineObject2Entity | 
 try {
-    val result : UsersFollowingCreateResponse = apiInstance.usersIdFollow(id, inlineObject2)
+    val result : UsersFollowingCreateResponseEntity = apiInstance.usersIdFollow(id, inlineObject2Entity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdFollow")
@@ -676,11 +676,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the user that is requesting to follow the target user |
- **inlineObject2** | [**InlineObject2**](InlineObject2.md)|  | [optional]
+ **inlineObject2Entity** | [**InlineObject2Entity**](InlineObject2Entity.md)|  | [optional]
 
 ### Return type
 
-[**UsersFollowingCreateResponse**](UsersFollowingCreateResponse.md)
+[**UsersFollowingCreateResponseEntity**](UsersFollowingCreateResponseEntity.md)
 
 ### Authorization
 
@@ -695,7 +695,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdFollowers"></a>
 # **usersIdFollowers**
-> GenericMultipleUsersLookupResponse usersIdFollowers(id, maxResults, paginationToken)
+> GenericMultipleUsersLookupResponseEntity usersIdFollowers(id, maxResults, paginationToken)
 
 Returns user objects that follow the provided user ID
 
@@ -712,7 +712,7 @@ val id : kotlin.String = id_example // kotlin.String | The ID of the user for wh
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This value is populated by passing the 'next_token' or 'previous_token' returned in a request to paginate through results.
 try {
-    val result : GenericMultipleUsersLookupResponse = apiInstance.usersIdFollowers(id, maxResults, paginationToken)
+    val result : GenericMultipleUsersLookupResponseEntity = apiInstance.usersIdFollowers(id, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdFollowers")
@@ -733,7 +733,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericMultipleUsersLookupResponse**](GenericMultipleUsersLookupResponse.md)
+[**GenericMultipleUsersLookupResponseEntity**](GenericMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -750,7 +750,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdFollowing"></a>
 # **usersIdFollowing**
-> UsersFollowingLookupResponse usersIdFollowing(id, maxResults, paginationToken)
+> UsersFollowingLookupResponseEntity usersIdFollowing(id, maxResults, paginationToken)
 
 Following by User ID
 
@@ -767,7 +767,7 @@ val id : kotlin.String = id_example // kotlin.String | The ID of the user for wh
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This value is populated by passing the 'next_token' or 'previous_token' returned in a request to paginate through results.
 try {
-    val result : UsersFollowingLookupResponse = apiInstance.usersIdFollowing(id, maxResults, paginationToken)
+    val result : UsersFollowingLookupResponseEntity = apiInstance.usersIdFollowing(id, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdFollowing")
@@ -788,7 +788,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UsersFollowingLookupResponse**](UsersFollowingLookupResponse.md)
+[**UsersFollowingLookupResponseEntity**](UsersFollowingLookupResponseEntity.md)
 
 ### Authorization
 
@@ -805,7 +805,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdMute"></a>
 # **usersIdMute**
-> UsersMutingMutationResponse usersIdMute(id, inlineObject1)
+> UsersMutingMutationResponseEntity usersIdMute(id, inlineObject1Entity)
 
 Mute User by User ID
 
@@ -819,9 +819,9 @@ Causes the user (in the path) to mute the target user. The user (in the path) mu
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to mute the target user
-val inlineObject1 : InlineObject1 =  // InlineObject1 | 
+val inlineObject1Entity : InlineObject1Entity =  // InlineObject1Entity | 
 try {
-    val result : UsersMutingMutationResponse = apiInstance.usersIdMute(id, inlineObject1)
+    val result : UsersMutingMutationResponseEntity = apiInstance.usersIdMute(id, inlineObject1Entity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdMute")
@@ -837,11 +837,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the user that is requesting to mute the target user |
- **inlineObject1** | [**InlineObject1**](InlineObject1.md)|  | [optional]
+ **inlineObject1Entity** | [**InlineObject1Entity**](InlineObject1Entity.md)|  | [optional]
 
 ### Return type
 
-[**UsersMutingMutationResponse**](UsersMutingMutationResponse.md)
+[**UsersMutingMutationResponseEntity**](UsersMutingMutationResponseEntity.md)
 
 ### Authorization
 
@@ -856,7 +856,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdMuting"></a>
 # **usersIdMuting**
-> GenericMultipleUsersLookupResponse usersIdMuting(id, maxResults, paginationToken)
+> GenericMultipleUsersLookupResponseEntity usersIdMuting(id, maxResults, paginationToken)
 
 Returns user objects that are muted by the provided user ID
 
@@ -873,7 +873,7 @@ val id : kotlin.String = id_example // kotlin.String | The ID of the user for wh
 val maxResults : kotlin.Int = 56 // kotlin.Int | The maximum number of results
 val paginationToken : kotlin.String = paginationToken_example // kotlin.String | This parameter is used to get the next 'page' of results.
 try {
-    val result : GenericMultipleUsersLookupResponse = apiInstance.usersIdMuting(id, maxResults, paginationToken)
+    val result : GenericMultipleUsersLookupResponseEntity = apiInstance.usersIdMuting(id, maxResults, paginationToken)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdMuting")
@@ -894,7 +894,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericMultipleUsersLookupResponse**](GenericMultipleUsersLookupResponse.md)
+[**GenericMultipleUsersLookupResponseEntity**](GenericMultipleUsersLookupResponseEntity.md)
 
 ### Authorization
 
@@ -909,7 +909,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdUnblock"></a>
 # **usersIdUnblock**
-> UsersBlockingMutationResponse usersIdUnblock(sourceUserId, targetUserId)
+> UsersBlockingMutationResponseEntity usersIdUnblock(sourceUserId, targetUserId)
 
 Unblock User by User ID
 
@@ -925,7 +925,7 @@ val apiInstance = UsersApi()
 val sourceUserId : kotlin.String = sourceUserId_example // kotlin.String | The ID of the user that is requesting to unblock the target user
 val targetUserId : kotlin.String = targetUserId_example // kotlin.String | The ID of the user that the source user is requesting to unblock
 try {
-    val result : UsersBlockingMutationResponse = apiInstance.usersIdUnblock(sourceUserId, targetUserId)
+    val result : UsersBlockingMutationResponseEntity = apiInstance.usersIdUnblock(sourceUserId, targetUserId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdUnblock")
@@ -945,7 +945,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UsersBlockingMutationResponse**](UsersBlockingMutationResponse.md)
+[**UsersBlockingMutationResponseEntity**](UsersBlockingMutationResponseEntity.md)
 
 ### Authorization
 
@@ -960,7 +960,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdUnfollow"></a>
 # **usersIdUnfollow**
-> UsersFollowingDeleteResponse usersIdUnfollow(sourceUserId, targetUserId)
+> UsersFollowingDeleteResponseEntity usersIdUnfollow(sourceUserId, targetUserId)
 
 Unfollow User
 
@@ -976,7 +976,7 @@ val apiInstance = UsersApi()
 val sourceUserId : kotlin.String = sourceUserId_example // kotlin.String | The ID of the user that is requesting to unfollow the target user
 val targetUserId : kotlin.String = targetUserId_example // kotlin.String | The ID of the user that the source user is requesting to unfollow
 try {
-    val result : UsersFollowingDeleteResponse = apiInstance.usersIdUnfollow(sourceUserId, targetUserId)
+    val result : UsersFollowingDeleteResponseEntity = apiInstance.usersIdUnfollow(sourceUserId, targetUserId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdUnfollow")
@@ -996,7 +996,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UsersFollowingDeleteResponse**](UsersFollowingDeleteResponse.md)
+[**UsersFollowingDeleteResponseEntity**](UsersFollowingDeleteResponseEntity.md)
 
 ### Authorization
 
@@ -1011,7 +1011,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdUnmute"></a>
 # **usersIdUnmute**
-> UsersMutingMutationResponse usersIdUnmute(sourceUserId, targetUserId)
+> UsersMutingMutationResponseEntity usersIdUnmute(sourceUserId, targetUserId)
 
 Unmute User by User ID
 
@@ -1027,7 +1027,7 @@ val apiInstance = UsersApi()
 val sourceUserId : kotlin.String = sourceUserId_example // kotlin.String | The ID of the user that is requesting to unmute the target user
 val targetUserId : kotlin.String = targetUserId_example // kotlin.String | The ID of the user that the source user is requesting to unmute
 try {
-    val result : UsersMutingMutationResponse = apiInstance.usersIdUnmute(sourceUserId, targetUserId)
+    val result : UsersMutingMutationResponseEntity = apiInstance.usersIdUnmute(sourceUserId, targetUserId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#usersIdUnmute")
@@ -1047,7 +1047,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**UsersMutingMutationResponse**](UsersMutingMutationResponse.md)
+[**UsersMutingMutationResponseEntity**](UsersMutingMutationResponseEntity.md)
 
 ### Authorization
 

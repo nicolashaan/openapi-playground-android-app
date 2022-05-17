@@ -1,5 +1,5 @@
 
-# TweetSearchResponseMeta
+# TweetSearchResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

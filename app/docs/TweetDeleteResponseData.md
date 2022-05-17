@@ -1,5 +1,5 @@
 
-# TweetDeleteResponseData
+# TweetDeleteResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

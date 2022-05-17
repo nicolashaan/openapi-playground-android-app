@@ -1,5 +1,5 @@
 
-# ListLookupMultipleUsersLookupResponseMeta
+# ListLookupMultipleUsersLookupResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 <a name="getUserListMemberships"></a>
 # **getUserListMemberships**
-> MultiListResponse getUserListMemberships(id, maxResults, paginationToken, listFields, expansions, userFields)
+> MultiListResponseEntity getUserListMemberships(id, maxResults, paginationToken, listFields, expansions, userFields)
 
 Get a User&#39;s List Memberships
 
@@ -42,7 +42,7 @@ val listFields : kotlin.collections.Set<kotlin.String> = ["created_at","descript
 val expansions : kotlin.collections.Set<kotlin.String> = ["owner_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiListResponse = apiInstance.getUserListMemberships(id, maxResults, paginationToken, listFields, expansions, userFields)
+    val result : MultiListResponseEntity = apiInstance.getUserListMemberships(id, maxResults, paginationToken, listFields, expansions, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#getUserListMemberships")
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiListResponse**](MultiListResponse.md)
+[**MultiListResponseEntity**](MultiListResponseEntity.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Configure OAuth2UserToken:
 
 <a name="listAddMember"></a>
 # **listAddMember**
-> ListMemberResponse listAddMember(id, listAddMemberRequest)
+> ListMemberResponseEntity listAddMember(id, listAddMemberRequestEntity)
 
 Add a List member
 
@@ -97,9 +97,9 @@ Causes a user to become a member of a List.
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to add a member
-val listAddMemberRequest : ListAddMemberRequest =  // ListAddMemberRequest | 
+val listAddMemberRequestEntity : ListAddMemberRequestEntity =  // ListAddMemberRequestEntity | 
 try {
-    val result : ListMemberResponse = apiInstance.listAddMember(id, listAddMemberRequest)
+    val result : ListMemberResponseEntity = apiInstance.listAddMember(id, listAddMemberRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listAddMember")
@@ -115,11 +115,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the List to add a member |
- **listAddMemberRequest** | [**ListAddMemberRequest**](ListAddMemberRequest.md)|  | [optional]
+ **listAddMemberRequestEntity** | [**ListAddMemberRequestEntity**](ListAddMemberRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**ListMemberResponse**](ListMemberResponse.md)
+[**ListMemberResponseEntity**](ListMemberResponseEntity.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Configure OAuth2UserToken:
 
 <a name="listIdCreate"></a>
 # **listIdCreate**
-> ListCreateResponse listIdCreate(listCreateRequest)
+> ListCreateResponseEntity listIdCreate(listCreateRequestEntity)
 
 Create List
 
@@ -147,9 +147,9 @@ Creates a new List.
 //import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
-val listCreateRequest : ListCreateRequest =  // ListCreateRequest | 
+val listCreateRequestEntity : ListCreateRequestEntity =  // ListCreateRequestEntity | 
 try {
-    val result : ListCreateResponse = apiInstance.listIdCreate(listCreateRequest)
+    val result : ListCreateResponseEntity = apiInstance.listIdCreate(listCreateRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listIdCreate")
@@ -164,11 +164,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **listCreateRequest** | [**ListCreateRequest**](ListCreateRequest.md)|  | [optional]
+ **listCreateRequestEntity** | [**ListCreateRequestEntity**](ListCreateRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**ListCreateResponse**](ListCreateResponse.md)
+[**ListCreateResponseEntity**](ListCreateResponseEntity.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Configure OAuth2UserToken:
 
 <a name="listIdDelete"></a>
 # **listIdDelete**
-> ListDeleteResponse listIdDelete(id)
+> ListDeleteResponseEntity listIdDelete(id)
 
 Delete List
 
@@ -198,7 +198,7 @@ Delete a List that you own.
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to delete
 try {
-    val result : ListDeleteResponse = apiInstance.listIdDelete(id)
+    val result : ListDeleteResponseEntity = apiInstance.listIdDelete(id)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listIdDelete")
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListDeleteResponse**](ListDeleteResponse.md)
+[**ListDeleteResponseEntity**](ListDeleteResponseEntity.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ Configure OAuth2UserToken:
 
 <a name="listIdGet"></a>
 # **listIdGet**
-> SingleListLookupResponse listIdGet(id, listFields, expansions, userFields)
+> SingleListLookupResponseEntity listIdGet(id, listFields, expansions, userFields)
 
 List lookup by List ID
 
@@ -250,7 +250,7 @@ val listFields : kotlin.collections.Set<kotlin.String> = ["created_at","descript
 val expansions : kotlin.collections.Set<kotlin.String> = ["owner_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : SingleListLookupResponse = apiInstance.listIdGet(id, listFields, expansions, userFields)
+    val result : SingleListLookupResponseEntity = apiInstance.listIdGet(id, listFields, expansions, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listIdGet")
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleListLookupResponse**](SingleListLookupResponse.md)
+[**SingleListLookupResponseEntity**](SingleListLookupResponseEntity.md)
 
 ### Authorization
 
@@ -289,7 +289,7 @@ Configure OAuth2UserToken:
 
 <a name="listIdUpdate"></a>
 # **listIdUpdate**
-> ListUpdateResponse listIdUpdate(id, listUpdateRequest)
+> ListUpdateResponseEntity listIdUpdate(id, listUpdateRequestEntity)
 
 Update List
 
@@ -303,9 +303,9 @@ Update a List that you own.
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to modify
-val listUpdateRequest : ListUpdateRequest =  // ListUpdateRequest | 
+val listUpdateRequestEntity : ListUpdateRequestEntity =  // ListUpdateRequestEntity | 
 try {
-    val result : ListUpdateResponse = apiInstance.listIdUpdate(id, listUpdateRequest)
+    val result : ListUpdateResponseEntity = apiInstance.listIdUpdate(id, listUpdateRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listIdUpdate")
@@ -321,11 +321,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the List to modify |
- **listUpdateRequest** | [**ListUpdateRequest**](ListUpdateRequest.md)|  | [optional]
+ **listUpdateRequestEntity** | [**ListUpdateRequestEntity**](ListUpdateRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**ListUpdateResponse**](ListUpdateResponse.md)
+[**ListUpdateResponseEntity**](ListUpdateResponseEntity.md)
 
 ### Authorization
 
@@ -340,7 +340,7 @@ Configure OAuth2UserToken:
 
 <a name="listRemoveMember"></a>
 # **listRemoveMember**
-> ListMemberResponse listRemoveMember(id, userId)
+> ListMemberResponseEntity listRemoveMember(id, userId)
 
 Remove a List member
 
@@ -356,7 +356,7 @@ val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to remove a member
 val userId : kotlin.String = userId_example // kotlin.String | The ID of user that will be removed from the List
 try {
-    val result : ListMemberResponse = apiInstance.listRemoveMember(id, userId)
+    val result : ListMemberResponseEntity = apiInstance.listRemoveMember(id, userId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listRemoveMember")
@@ -376,7 +376,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListMemberResponse**](ListMemberResponse.md)
+[**ListMemberResponseEntity**](ListMemberResponseEntity.md)
 
 ### Authorization
 
@@ -391,7 +391,7 @@ Configure OAuth2UserToken:
 
 <a name="listUserFollow"></a>
 # **listUserFollow**
-> ListFollowedResponse listUserFollow(id, listFollowRequest)
+> ListFollowedResponseEntity listUserFollow(id, listFollowRequestEntity)
 
 Follow a List
 
@@ -405,9 +405,9 @@ Causes a user to follow a List.
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will follow the List
-val listFollowRequest : ListFollowRequest =  // ListFollowRequest | 
+val listFollowRequestEntity : ListFollowRequestEntity =  // ListFollowRequestEntity | 
 try {
-    val result : ListFollowedResponse = apiInstance.listUserFollow(id, listFollowRequest)
+    val result : ListFollowedResponseEntity = apiInstance.listUserFollow(id, listFollowRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listUserFollow")
@@ -423,11 +423,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the authenticated source user that will follow the List |
- **listFollowRequest** | [**ListFollowRequest**](ListFollowRequest.md)|  | [optional]
+ **listFollowRequestEntity** | [**ListFollowRequestEntity**](ListFollowRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**ListFollowedResponse**](ListFollowedResponse.md)
+[**ListFollowedResponseEntity**](ListFollowedResponseEntity.md)
 
 ### Authorization
 
@@ -442,7 +442,7 @@ Configure OAuth2UserToken:
 
 <a name="listUserOwnedLists"></a>
 # **listUserOwnedLists**
-> MultiListResponse listUserOwnedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
+> MultiListResponseEntity listUserOwnedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
 
 Get a User&#39;s Owned Lists
 
@@ -462,7 +462,7 @@ val listFields : kotlin.collections.Set<kotlin.String> = ["created_at","descript
 val expansions : kotlin.collections.Set<kotlin.String> = ["owner_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiListResponse = apiInstance.listUserOwnedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
+    val result : MultiListResponseEntity = apiInstance.listUserOwnedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listUserOwnedLists")
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiListResponse**](MultiListResponse.md)
+[**MultiListResponseEntity**](MultiListResponseEntity.md)
 
 ### Authorization
 
@@ -503,7 +503,7 @@ Configure OAuth2UserToken:
 
 <a name="listUserPin"></a>
 # **listUserPin**
-> ListPinnedResponse listUserPin(id, listPinRequest)
+> ListPinnedResponseEntity listUserPin(id, listPinRequestEntity)
 
 Pin a List
 
@@ -517,9 +517,9 @@ Causes a user to pin a List.
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will pin the List
-val listPinRequest : ListPinRequest =  // ListPinRequest | 
+val listPinRequestEntity : ListPinRequestEntity =  // ListPinRequestEntity | 
 try {
-    val result : ListPinnedResponse = apiInstance.listUserPin(id, listPinRequest)
+    val result : ListPinnedResponseEntity = apiInstance.listUserPin(id, listPinRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listUserPin")
@@ -535,11 +535,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the authenticated source user that will pin the List |
- **listPinRequest** | [**ListPinRequest**](ListPinRequest.md)|  | [optional]
+ **listPinRequestEntity** | [**ListPinRequestEntity**](ListPinRequestEntity.md)|  | [optional]
 
 ### Return type
 
-[**ListPinnedResponse**](ListPinnedResponse.md)
+[**ListPinnedResponseEntity**](ListPinnedResponseEntity.md)
 
 ### Authorization
 
@@ -554,7 +554,7 @@ Configure OAuth2UserToken:
 
 <a name="listUserPinnedLists"></a>
 # **listUserPinnedLists**
-> MultiListNoPaginationResponse listUserPinnedLists(id, listFields, expansions, userFields)
+> MultiListNoPaginationResponseEntity listUserPinnedLists(id, listFields, expansions, userFields)
 
 Get a User&#39;s Pinned Lists
 
@@ -572,7 +572,7 @@ val listFields : kotlin.collections.Set<kotlin.String> = ["created_at","descript
 val expansions : kotlin.collections.Set<kotlin.String> = ["owner_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiListNoPaginationResponse = apiInstance.listUserPinnedLists(id, listFields, expansions, userFields)
+    val result : MultiListNoPaginationResponseEntity = apiInstance.listUserPinnedLists(id, listFields, expansions, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listUserPinnedLists")
@@ -594,7 +594,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiListNoPaginationResponse**](MultiListNoPaginationResponse.md)
+[**MultiListNoPaginationResponseEntity**](MultiListNoPaginationResponseEntity.md)
 
 ### Authorization
 
@@ -609,7 +609,7 @@ Configure OAuth2UserToken:
 
 <a name="listUserUnfollow"></a>
 # **listUserUnfollow**
-> ListFollowedResponse listUserUnfollow(id, listId)
+> ListFollowedResponseEntity listUserUnfollow(id, listId)
 
 Unfollow a List
 
@@ -625,7 +625,7 @@ val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will unfollow the List
 val listId : kotlin.String = listId_example // kotlin.String | The ID of the List to unfollow
 try {
-    val result : ListFollowedResponse = apiInstance.listUserUnfollow(id, listId)
+    val result : ListFollowedResponseEntity = apiInstance.listUserUnfollow(id, listId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listUserUnfollow")
@@ -645,7 +645,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListFollowedResponse**](ListFollowedResponse.md)
+[**ListFollowedResponseEntity**](ListFollowedResponseEntity.md)
 
 ### Authorization
 
@@ -660,7 +660,7 @@ Configure OAuth2UserToken:
 
 <a name="listUserUnpin"></a>
 # **listUserUnpin**
-> ListPinnedResponse listUserUnpin(id, listId)
+> ListPinnedResponseEntity listUserUnpin(id, listId)
 
 Unpin a List
 
@@ -676,7 +676,7 @@ val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will remove the pinned List
 val listId : kotlin.String = listId_example // kotlin.String | The ID of the List to unpin
 try {
-    val result : ListPinnedResponse = apiInstance.listUserUnpin(id, listId)
+    val result : ListPinnedResponseEntity = apiInstance.listUserUnpin(id, listId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#listUserUnpin")
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListPinnedResponse**](ListPinnedResponse.md)
+[**ListPinnedResponseEntity**](ListPinnedResponseEntity.md)
 
 ### Authorization
 
@@ -711,7 +711,7 @@ Configure OAuth2UserToken:
 
 <a name="userFollowedLists"></a>
 # **userFollowedLists**
-> MultiListResponse userFollowedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
+> MultiListResponseEntity userFollowedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
 
 Get User&#39;s Followed Lists
 
@@ -731,7 +731,7 @@ val listFields : kotlin.collections.Set<kotlin.String> = ["created_at","descript
 val expansions : kotlin.collections.Set<kotlin.String> = ["owner_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
 val userFields : kotlin.collections.Set<kotlin.String> = ["username","verified","profile_image_url"] // kotlin.collections.Set<kotlin.String> | A comma separated list of User fields to display.
 try {
-    val result : MultiListResponse = apiInstance.userFollowedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
+    val result : MultiListResponseEntity = apiInstance.userFollowedLists(id, maxResults, paginationToken, listFields, expansions, userFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ListsApi#userFollowedLists")
@@ -755,7 +755,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MultiListResponse**](MultiListResponse.md)
+[**MultiListResponseEntity**](MultiListResponseEntity.md)
 
 ### Authorization
 

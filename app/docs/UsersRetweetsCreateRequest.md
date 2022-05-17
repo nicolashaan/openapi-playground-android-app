@@ -1,5 +1,5 @@
 
-# UsersRetweetsCreateRequest
+# UsersRetweetsCreateRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

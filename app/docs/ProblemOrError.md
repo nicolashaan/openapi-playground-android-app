@@ -1,5 +1,5 @@
 
-# ProblemOrError
+# ProblemOrErrorEntity
 
 ## Properties
 Name | Type | Description | Notes

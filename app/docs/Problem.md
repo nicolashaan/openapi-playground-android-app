@@ -1,5 +1,5 @@
 
-# Problem
+# ProblemEntity
 
 ## Properties
 Name | Type | Description | Notes

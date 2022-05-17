@@ -1,5 +1,5 @@
 
-# SearchCount
+# SearchCountEntity
 
 ## Properties
 Name | Type | Description | Notes

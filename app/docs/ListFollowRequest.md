@@ -1,5 +1,5 @@
 
-# ListFollowRequest
+# ListFollowRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

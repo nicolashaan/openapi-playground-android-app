@@ -1,5 +1,5 @@
 
-# ListPinRequest
+# ListPinRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

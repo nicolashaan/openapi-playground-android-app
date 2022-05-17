@@ -1,5 +1,5 @@
 
-# ListCreateRequest
+# ListCreateRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

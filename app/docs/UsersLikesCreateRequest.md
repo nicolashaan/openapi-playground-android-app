@@ -1,5 +1,5 @@
 
-# UsersLikesCreateRequest
+# UsersLikesCreateRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

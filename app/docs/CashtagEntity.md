@@ -1,5 +1,5 @@
 
-# CashtagEntity
+# CashtagEntityEntity
 
 ## Properties
 Name | Type | Description | Notes

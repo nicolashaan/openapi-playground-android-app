@@ -1,5 +1,5 @@
 
-# VideoAllOfVariants
+# VideoAllOfVariantsEntity
 
 ## Properties
 Name | Type | Description | Notes

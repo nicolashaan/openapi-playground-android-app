@@ -1,5 +1,5 @@
 
-# RuleNoId
+# RuleNoIdEntity
 
 ## Properties
 Name | Type | Description | Notes

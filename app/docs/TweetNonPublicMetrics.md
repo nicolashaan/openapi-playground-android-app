@@ -1,5 +1,5 @@
 
-# TweetNonPublicMetrics
+# TweetNonPublicMetricsEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,5 +1,5 @@
 
-# ComplianceJobStatus
+# ComplianceJobStatusEntity
 
 ## Enum
 

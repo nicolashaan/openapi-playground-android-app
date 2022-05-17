@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getUsersIdBookmarks"></a>
 # **getUsersIdBookmarks**
-> GenericTweetsTimelineResponse getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+> GenericTweetsTimelineResponseEntity getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
 
 Bookmarks by User
 
@@ -34,7 +34,7 @@ val mediaFields : kotlin.collections.Set<kotlin.String> = ["media_key","duration
 val placeFields : kotlin.collections.Set<kotlin.String> = ["id","name","country_code","place_type","full_name","country","contained_within","geo"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Place fields to display.
 val pollFields : kotlin.collections.Set<kotlin.String> = ["duration_minutes","options","voting_status","end_datetime"] // kotlin.collections.Set<kotlin.String> | A comma separated list of Poll fields to display.
 try {
-    val result : GenericTweetsTimelineResponse = apiInstance.getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
+    val result : GenericTweetsTimelineResponseEntity = apiInstance.getUsersIdBookmarks(id, maxResults, paginationToken, expansions, tweetFields, userFields, mediaFields, placeFields, pollFields)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling BookmarksApi#getUsersIdBookmarks")
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericTweetsTimelineResponse**](GenericTweetsTimelineResponse.md)
+[**GenericTweetsTimelineResponseEntity**](GenericTweetsTimelineResponseEntity.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Configure OAuth2UserToken:
 
 <a name="postUsersIdBookmarks"></a>
 # **postUsersIdBookmarks**
-> BookmarkMutationResponse postUsersIdBookmarks(id, addBookmarkRequest)
+> BookmarkMutationResponseEntity postUsersIdBookmarks(id, addBookmarkRequestEntity)
 
 Add Tweet to Bookmarks
 
@@ -90,9 +90,9 @@ Adds a Tweet (ID in the body) to the requesting user&#39;s (in the path) bookmar
 
 val apiInstance = BookmarksApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to add bookmarks
-val addBookmarkRequest : AddBookmarkRequest =  // AddBookmarkRequest | 
+val addBookmarkRequestEntity : AddBookmarkRequestEntity =  // AddBookmarkRequestEntity | 
 try {
-    val result : BookmarkMutationResponse = apiInstance.postUsersIdBookmarks(id, addBookmarkRequest)
+    val result : BookmarkMutationResponseEntity = apiInstance.postUsersIdBookmarks(id, addBookmarkRequestEntity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling BookmarksApi#postUsersIdBookmarks")
@@ -108,11 +108,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **kotlin.String**| The ID of the user for whom to add bookmarks |
- **addBookmarkRequest** | [**AddBookmarkRequest**](AddBookmarkRequest.md)|  |
+ **addBookmarkRequestEntity** | [**AddBookmarkRequestEntity**](AddBookmarkRequestEntity.md)|  |
 
 ### Return type
 
-[**BookmarkMutationResponse**](BookmarkMutationResponse.md)
+[**BookmarkMutationResponseEntity**](BookmarkMutationResponseEntity.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Configure OAuth2UserToken:
 
 <a name="usersIdBookmarksDelete"></a>
 # **usersIdBookmarksDelete**
-> BookmarkMutationResponse usersIdBookmarksDelete(id, tweetId)
+> BookmarkMutationResponseEntity usersIdBookmarksDelete(id, tweetId)
 
 Remove a bookmarked Tweet
 
@@ -143,7 +143,7 @@ val apiInstance = BookmarksApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user whose bookmark is to be removed.
 val tweetId : kotlin.String = tweetId_example // kotlin.String | The ID of the tweet that the user is removing from bookmarks
 try {
-    val result : BookmarkMutationResponse = apiInstance.usersIdBookmarksDelete(id, tweetId)
+    val result : BookmarkMutationResponseEntity = apiInstance.usersIdBookmarksDelete(id, tweetId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling BookmarksApi#usersIdBookmarksDelete")
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BookmarkMutationResponse**](BookmarkMutationResponse.md)
+[**BookmarkMutationResponseEntity**](BookmarkMutationResponseEntity.md)
 
 ### Authorization
 

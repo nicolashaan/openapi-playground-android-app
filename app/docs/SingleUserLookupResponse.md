@@ -1,12 +1,12 @@
 
-# SingleUserLookupResponse
+# SingleUserLookupResponseEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**&#x60;data&#x60;** | [**User**](User.md) |  |  [optional]
-**includes** | [**Expansions**](Expansions.md) |  |  [optional]
-**errors** | [**kotlin.collections.List&lt;Problem&gt;**](Problem.md) |  |  [optional]
+**&#x60;data&#x60;** | [**UserEntity**](UserEntity.md) |  |  [optional]
+**includes** | [**ExpansionsEntity**](ExpansionsEntity.md) |  |  [optional]
+**errors** | [**kotlin.collections.List&lt;ProblemEntity&gt;**](ProblemEntity.md) |  |  [optional]
 
 
 

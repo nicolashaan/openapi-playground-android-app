@@ -1,5 +1,5 @@
 
-# MultiComplianceJobResponseMeta
+# MultiComplianceJobResponseMetaEntity
 
 ## Properties
 Name | Type | Description | Notes

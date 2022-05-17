@@ -1,5 +1,5 @@
 
-# UsersMutingMutationResponseData
+# UsersMutingMutationResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

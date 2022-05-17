@@ -1,5 +1,5 @@
 
-# ResourceUnauthorizedProblem
+# ResourceUnauthorizedProblemEntity
 
 ## Properties
 Name | Type | Description | Notes

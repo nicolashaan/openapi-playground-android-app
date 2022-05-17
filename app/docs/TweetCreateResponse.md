@@ -1,11 +1,11 @@
 
-# TweetCreateResponse
+# TweetCreateResponseEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**&#x60;data&#x60;** | [**TweetCreateResponseData**](TweetCreateResponseData.md) |  |  [optional]
-**errors** | [**kotlin.collections.List&lt;Problem&gt;**](Problem.md) |  |  [optional]
+**&#x60;data&#x60;** | [**TweetCreateResponseDataEntity**](TweetCreateResponseDataEntity.md) |  |  [optional]
+**errors** | [**kotlin.collections.List&lt;ProblemEntity&gt;**](ProblemEntity.md) |  |  [optional]
 
 
 

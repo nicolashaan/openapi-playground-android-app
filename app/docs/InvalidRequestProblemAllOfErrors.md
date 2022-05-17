@@ -1,5 +1,5 @@
 
-# InvalidRequestProblemAllOfErrors
+# InvalidRequestProblemAllOfErrorsEntity
 
 ## Properties
 Name | Type | Description | Notes

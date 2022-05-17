@@ -1,10 +1,10 @@
 
-# InlineResponse200
+# InlineResponse200Entity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**&#x60;data&#x60;** | [**InlineObject4**](InlineObject4.md) |  |  [optional]
+**&#x60;data&#x60;** | [**InlineObject4Entity**](InlineObject4Entity.md) |  |  [optional]
 
 
 

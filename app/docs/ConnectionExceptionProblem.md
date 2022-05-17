@@ -1,5 +1,5 @@
 
-# ConnectionExceptionProblem
+# ConnectionExceptionProblemEntity
 
 ## Properties
 Name | Type | Description | Notes

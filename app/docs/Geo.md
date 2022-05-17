@@ -1,5 +1,5 @@
 
-# Geo
+# GeoEntity
 
 ## Properties
 Name | Type | Description | Notes
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **type** | [**inline**](#Type) |  | 
 **bbox** | **kotlin.collections.List&lt;kotlin.Double&gt;** |  | 
 **properties** | [**kotlin.Any**](.md) |  | 
-**geometry** | [**Point**](Point.md) |  |  [optional]
+**geometry** | [**PointEntity**](PointEntity.md) |  |  [optional]
 
 
 <a name="Type"></a>

@@ -1,5 +1,5 @@
 
-# ListUpdateRequest
+# ListUpdateRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

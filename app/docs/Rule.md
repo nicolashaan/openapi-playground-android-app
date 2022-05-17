@@ -1,5 +1,5 @@
 
-# Rule
+# RuleEntity
 
 ## Properties
 Name | Type | Description | Notes

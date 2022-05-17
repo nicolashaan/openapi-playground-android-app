@@ -1,5 +1,5 @@
 
-# MentionFields
+# MentionFieldsEntity
 
 ## Properties
 Name | Type | Description | Notes

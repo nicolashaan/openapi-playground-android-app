@@ -1,5 +1,5 @@
 
-# PollOption
+# PollOptionEntity
 
 ## Properties
 Name | Type | Description | Notes

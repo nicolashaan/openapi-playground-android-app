@@ -1,5 +1,5 @@
 
-# ListAddMemberRequest
+# ListAddMemberRequestEntity
 
 ## Properties
 Name | Type | Description | Notes

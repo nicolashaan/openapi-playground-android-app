@@ -1,5 +1,5 @@
 
-# PhotoAllOf
+# PhotoAllOfEntity
 
 ## Properties
 Name | Type | Description | Notes

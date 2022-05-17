@@ -1,5 +1,5 @@
 
-# ListMemberResponseData
+# ListMemberResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

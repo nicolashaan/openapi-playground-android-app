@@ -1,5 +1,5 @@
 
-# ListDeleteResponseData
+# ListDeleteResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

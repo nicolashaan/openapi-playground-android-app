@@ -1,5 +1,5 @@
 
-# Model2TweetsGeo
+# Model2TweetsGeoEntity
 
 ## Properties
 Name | Type | Description | Notes

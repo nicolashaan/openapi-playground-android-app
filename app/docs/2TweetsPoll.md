@@ -1,5 +1,5 @@
 
-# Model2TweetsPoll
+# Model2TweetsPollEntity
 
 ## Properties
 Name | Type | Description | Notes

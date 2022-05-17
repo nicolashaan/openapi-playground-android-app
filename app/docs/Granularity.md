@@ -1,5 +1,5 @@
 
-# Granularity
+# GranularityEntity
 
 ## Enum
 

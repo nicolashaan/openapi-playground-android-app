@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="createBatchComplianceJob"></a>
 # **createBatchComplianceJob**
-> SingleComplianceJobResponse createBatchComplianceJob(inlineObject5)
+> SingleComplianceJobResponseEntity createBatchComplianceJob(inlineObject5Entity)
 
 Create compliance job
 
@@ -24,9 +24,9 @@ Creates a compliance for the given job type
 //import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ComplianceApi()
-val inlineObject5 : InlineObject5 =  // InlineObject5 | 
+val inlineObject5Entity : InlineObject5Entity =  // InlineObject5Entity | 
 try {
-    val result : SingleComplianceJobResponse = apiInstance.createBatchComplianceJob(inlineObject5)
+    val result : SingleComplianceJobResponseEntity = apiInstance.createBatchComplianceJob(inlineObject5Entity)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ComplianceApi#createBatchComplianceJob")
@@ -41,11 +41,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineObject5** | [**InlineObject5**](InlineObject5.md)|  |
+ **inlineObject5Entity** | [**InlineObject5Entity**](InlineObject5Entity.md)|  |
 
 ### Return type
 
-[**SingleComplianceJobResponse**](SingleComplianceJobResponse.md)
+[**SingleComplianceJobResponseEntity**](SingleComplianceJobResponseEntity.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ Configure BearerToken:
 
 <a name="getBatchComplianceJob"></a>
 # **getBatchComplianceJob**
-> SingleComplianceJobResponse getBatchComplianceJob(id)
+> SingleComplianceJobResponseEntity getBatchComplianceJob(id)
 
 Get compliance job
 
@@ -75,7 +75,7 @@ Returns a single compliance job by ID
 val apiInstance = ComplianceApi()
 val id : kotlin.String = id_example // kotlin.String | ID of the compliance job to retrieve.
 try {
-    val result : SingleComplianceJobResponse = apiInstance.getBatchComplianceJob(id)
+    val result : SingleComplianceJobResponseEntity = apiInstance.getBatchComplianceJob(id)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ComplianceApi#getBatchComplianceJob")
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SingleComplianceJobResponse**](SingleComplianceJobResponse.md)
+[**SingleComplianceJobResponseEntity**](SingleComplianceJobResponseEntity.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ Configure BearerToken:
 
 <a name="listBatchComplianceJobs"></a>
 # **listBatchComplianceJobs**
-> MultiComplianceJobResponse listBatchComplianceJobs(type, status)
+> MultiComplianceJobResponseEntity listBatchComplianceJobs(type, status)
 
 List compliance jobs
 
@@ -122,10 +122,10 @@ Returns recent compliance jobs for a given job type and optional job status
 //import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ComplianceApi()
-val type : ComplianceJobType =  // ComplianceJobType | Type of compliance job to list.
-val status : ComplianceJobStatus =  // ComplianceJobStatus | Status of compliance job to list.
+val type : ComplianceJobTypeEntity =  // ComplianceJobTypeEntity | Type of compliance job to list.
+val status : ComplianceJobStatusEntity =  // ComplianceJobStatusEntity | Status of compliance job to list.
 try {
-    val result : MultiComplianceJobResponse = apiInstance.listBatchComplianceJobs(type, status)
+    val result : MultiComplianceJobResponseEntity = apiInstance.listBatchComplianceJobs(type, status)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling ComplianceApi#listBatchComplianceJobs")
@@ -140,12 +140,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | [**ComplianceJobType**](.md)| Type of compliance job to list. | [enum: tweets, users]
- **status** | [**ComplianceJobStatus**](.md)| Status of compliance job to list. | [optional] [enum: created, in_progress, failed, complete]
+ **type** | [**ComplianceJobTypeEntity**](.md)| Type of compliance job to list. | [enum: tweets, users]
+ **status** | [**ComplianceJobStatusEntity**](.md)| Status of compliance job to list. | [optional] [enum: created, in_progress, failed, complete]
 
 ### Return type
 
-[**MultiComplianceJobResponse**](MultiComplianceJobResponse.md)
+[**MultiComplianceJobResponseEntity**](MultiComplianceJobResponseEntity.md)
 
 ### Authorization
 

@@ -1,5 +1,5 @@
 
-# ListUpdateResponseData
+# ListUpdateResponseDataEntity
 
 ## Properties
 Name | Type | Description | Notes

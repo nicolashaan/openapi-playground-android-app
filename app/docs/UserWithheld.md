@@ -1,5 +1,5 @@
 
-# UserWithheld
+# UserWithheldEntity
 
 ## Properties
 Name | Type | Description | Notes

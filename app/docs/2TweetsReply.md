@@ -1,5 +1,5 @@
 
-# Model2TweetsReply
+# Model2TweetsReplyEntity
 
 ## Properties
 Name | Type | Description | Notes

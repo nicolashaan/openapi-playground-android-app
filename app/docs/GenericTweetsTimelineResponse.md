@@ -1,13 +1,13 @@
 
-# GenericTweetsTimelineResponse
+# GenericTweetsTimelineResponseEntity
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**&#x60;data&#x60;** | [**kotlin.collections.List&lt;Tweet&gt;**](Tweet.md) |  |  [optional]
-**includes** | [**Expansions**](Expansions.md) |  |  [optional]
-**errors** | [**kotlin.collections.List&lt;Problem&gt;**](Problem.md) |  |  [optional]
-**meta** | [**GenericTweetsTimelineResponseMeta**](GenericTweetsTimelineResponseMeta.md) |  |  [optional]
+**&#x60;data&#x60;** | [**kotlin.collections.List&lt;TweetEntity&gt;**](TweetEntity.md) |  |  [optional]
+**includes** | [**ExpansionsEntity**](ExpansionsEntity.md) |  |  [optional]
+**errors** | [**kotlin.collections.List&lt;ProblemEntity&gt;**](ProblemEntity.md) |  |  [optional]
+**meta** | [**GenericTweetsTimelineResponseMetaEntity**](GenericTweetsTimelineResponseMetaEntity.md) |  |  [optional]
 
 
 
