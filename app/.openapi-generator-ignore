@@ -1,0 +1,13 @@
+.openapi-generator/FILES
+.openapi-generator/VERSION
+gradle/
+src/main/java/org/
+.openapi-generator-ignore
+*
+.openapi-generator-ignore
+.openapi-generator/
+README.md
+gradlew.bat
+settings.gradle
+build.gradle
+proguard-rules.pro
