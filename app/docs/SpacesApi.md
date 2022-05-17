@@ -22,7 +22,7 @@ Returns a variety of information about the Space specified by the requested ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -69,7 +69,7 @@ Returns a variety of information about the Spaces created by the provided User I
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -116,7 +116,7 @@ Returns a variety of information about the Spaces specified by the requested IDs
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -163,7 +163,7 @@ Returns Spaces that match the provided query.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -214,7 +214,7 @@ Retrieves the list of users who purchased a ticket to the given space
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -259,7 +259,7 @@ Retrieves tweets shared in the specified space
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")

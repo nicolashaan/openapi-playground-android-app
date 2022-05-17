@@ -30,7 +30,7 @@ Get a User&#39;s List Memberships.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -83,7 +83,7 @@ Causes a user to become a member of a List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -125,7 +125,7 @@ Creates a new List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -165,7 +165,7 @@ Delete a List that you own.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -205,7 +205,7 @@ Returns a List
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -254,7 +254,7 @@ Update a List that you own.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -296,7 +296,7 @@ Causes a user to be removed from the members of a List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -338,7 +338,7 @@ Causes a user to follow a List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -380,7 +380,7 @@ Get a User&#39;s Owned Lists.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -433,7 +433,7 @@ Causes a user to pin a List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -475,7 +475,7 @@ Get a User&#39;s Pinned Lists.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -521,7 +521,7 @@ Causes a user to unfollow a List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -563,7 +563,7 @@ Causes a user to remove a pinned List.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(ListsApi::class.java)
@@ -605,7 +605,7 @@ Returns a user&#39;s followed Lists.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")

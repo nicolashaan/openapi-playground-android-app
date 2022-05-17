@@ -35,7 +35,7 @@ This endpoint returns information about the requesting user.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -79,7 +79,7 @@ This endpoint returns information about a user. Specify user by ID.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -128,7 +128,7 @@ This endpoint returns information about a user. Specify user by username.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -177,7 +177,7 @@ This endpoint returns information about users. Specify users by their ID.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -226,7 +226,7 @@ This endpoint returns information about users. Specify users by their username.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -275,7 +275,7 @@ Returns a list of users that follow a List by the provided List ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -328,7 +328,7 @@ Returns a list of users that are members of a List by the provided List ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -381,7 +381,7 @@ Returns a list of users that have liked the provided Tweet ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -428,7 +428,7 @@ Returns a list of users that have retweeted the provided Tweet ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -475,7 +475,7 @@ Causes the user (in the path) to block the target user. The user (in the path) m
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -517,7 +517,7 @@ Returns a list of users that are blocked by the provided user ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -561,7 +561,7 @@ Causes the user(in the path) to follow, or “request to follow” for protected
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -603,7 +603,7 @@ Returns a list of users that follow the provided user ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -650,7 +650,7 @@ Returns a list of users that are being followed by the provided user ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -697,7 +697,7 @@ Causes the user (in the path) to mute the target user. The user (in the path) mu
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -739,7 +739,7 @@ Returns a list of users that are muted by the provided user ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -783,7 +783,7 @@ Causes the source user to unblock the target user. The source user must match th
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -825,7 +825,7 @@ Causes the source user to unfollow the target user. The source user must match t
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)
@@ -867,7 +867,7 @@ Causes the source user to unmute the target user. The source user must match the
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(UsersApi::class.java)

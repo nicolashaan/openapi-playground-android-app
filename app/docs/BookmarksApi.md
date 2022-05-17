@@ -19,7 +19,7 @@ Returns Tweet objects that have been bookmarked by the requesting user
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(BookmarksApi::class.java)
@@ -75,7 +75,7 @@ Adds a Tweet (ID in the body) to the requesting user&#39;s (in the path) bookmar
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(BookmarksApi::class.java)
@@ -117,7 +117,7 @@ Removes a Tweet from the requesting user&#39;s bookmarked Tweets.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(BookmarksApi::class.java)

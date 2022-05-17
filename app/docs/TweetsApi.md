@@ -40,7 +40,7 @@ Add or delete rules from a user&#39;s active rule set. Users can provide unique,
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -85,7 +85,7 @@ Causes the user to create a tweet under the authorized account.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)
@@ -125,7 +125,7 @@ Delete specified Tweet (in the path) by ID.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)
@@ -165,7 +165,7 @@ Returns a variety of information about the Tweet specified by the requested ID.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -220,7 +220,7 @@ Returns a variety of information about the Tweet specified by the requested ID.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -275,7 +275,7 @@ Returns a variety of information about each tweet that quotes the Tweet specifie
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -334,7 +334,7 @@ Returns rules from a user&#39;s active rule set. Users can fetch all of their ru
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -381,7 +381,7 @@ Hides or unhides a reply to an owned conversation.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)
@@ -423,7 +423,7 @@ Returns a list of Tweets associated with the provided List ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -482,7 +482,7 @@ Streams a deterministic 1% of public Tweets.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -537,7 +537,7 @@ Streams Tweets matching the stream&#39;s active rule set.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -592,7 +592,7 @@ Retrieves the list of users who purchased a ticket to the given space
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -637,7 +637,7 @@ Retrieves tweets shared in the specified space
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -684,7 +684,7 @@ Returns Tweet Counts that match a search query.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -741,7 +741,7 @@ Returns Tweet Counts from the last 7 days that match a search query.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -798,7 +798,7 @@ Returns Tweets that match a search query.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -869,7 +869,7 @@ Returns Tweets from the last 7 days that match a search query.
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -940,7 +940,7 @@ Causes the user (in the path) to like the specified tweet. The user in the path 
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)
@@ -982,7 +982,7 @@ Returns a list of Tweets liked by the provided User ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -1041,7 +1041,7 @@ Returns Tweet objects that mention username associated to the provided User ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -1108,7 +1108,7 @@ Causes the user (in the path) to retweet the specified tweet. The user in the pa
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)
@@ -1150,7 +1150,7 @@ Returns a list of Tweets authored by the provided User ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -1219,7 +1219,7 @@ Causes the user (in the path) to unlike the specified tweet. The user must match
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)
@@ -1261,7 +1261,7 @@ Causes the user (in the path) to unretweet the specified tweet. The user must ma
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(TweetsApi::class.java)

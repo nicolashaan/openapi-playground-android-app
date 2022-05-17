@@ -19,7 +19,7 @@ Creates a compliance for the given job type
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -62,7 +62,7 @@ Returns a single compliance job by ID
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")
@@ -105,7 +105,7 @@ Returns recent compliance jobs for a given job type and optional job status
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 apiClient.setBearerToken("TOKEN")

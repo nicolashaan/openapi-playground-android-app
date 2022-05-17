@@ -17,7 +17,7 @@ Full open api spec in JSON format. (See https://github.com/OAI/OpenAPI-Specifica
 // Import classes:
 //import org.openapitools.client.*
 //import org.openapitools.client.infrastructure.*
-//import fr.haan.open_api_playground_app.data.entities.*
+//import fr.haan.openapi_playground_app.data.entities.*
 
 val apiClient = ApiClient()
 val webService = apiClient.createWebservice(GeneralApi::class.java)
