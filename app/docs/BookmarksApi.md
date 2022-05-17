@@ -21,7 +21,7 @@ Returns Tweet objects that have been bookmarked by the requesting user
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = BookmarksApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -86,7 +86,7 @@ Adds a Tweet (ID in the body) to the requesting user&#39;s (in the path) bookmar
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = BookmarksApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to add bookmarks
@@ -137,7 +137,7 @@ Removes a Tweet from the requesting user&#39;s bookmarked Tweets.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = BookmarksApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user whose bookmark is to be removed.

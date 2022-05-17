@@ -19,7 +19,7 @@ Full open api spec in JSON format. (See https://github.com/OAI/OpenAPI-Specifica
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = GeneralApi()
 try {

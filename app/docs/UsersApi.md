@@ -37,7 +37,7 @@ This endpoint returns information about the requesting user.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val expansions : kotlin.collections.Set<kotlin.String> = ["pinned_tweet_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
@@ -90,7 +90,7 @@ This endpoint returns information about a user. Specify user by ID.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = 2244994945 // kotlin.String | Required. A User ID.
@@ -147,7 +147,7 @@ This endpoint returns information about a user. Specify user by username.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val username : kotlin.String = TwitterDev // kotlin.String | Required. A username.
@@ -204,7 +204,7 @@ This endpoint returns information about users. Specify users by their ID.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val ids : kotlin.collections.List<kotlin.String> = 2244994945,6253282,12 // kotlin.collections.List<kotlin.String> | Required. A list of User IDs, comma-separated. You can specify up to 100 IDs.
@@ -261,7 +261,7 @@ This endpoint returns information about users. Specify users by their username.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val usernames : kotlin.collections.List<kotlin.String> = TwitterDev,TwitterAPI,jack // kotlin.collections.List<kotlin.String> | Required . A list of usernames, comma-separated. You can specify up to 100 usernames.
@@ -318,7 +318,7 @@ Returns a list of users that follow a List by the provided List ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List for which to return followers
@@ -379,7 +379,7 @@ Returns a list of users that are members of a List by the provided List ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List for which to return members
@@ -440,7 +440,7 @@ Returns a list of users that have liked the provided Tweet ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the Tweet for which to return results
@@ -495,7 +495,7 @@ Returns a list of users that have retweeted the provided Tweet ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the Tweet for which to return results
@@ -550,7 +550,7 @@ Causes the user (in the path) to block the target user. The user (in the path) m
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to block the target user
@@ -601,7 +601,7 @@ Returns a list of users that are blocked by the provided user ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -654,7 +654,7 @@ Causes the user(in the path) to follow, or “request to follow” for protected
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to follow the target user
@@ -705,7 +705,7 @@ Returns a list of users that follow the provided user ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -760,7 +760,7 @@ Returns a list of users that are being followed by the provided user ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -815,7 +815,7 @@ Causes the user (in the path) to mute the target user. The user (in the path) mu
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to mute the target user
@@ -866,7 +866,7 @@ Returns a list of users that are muted by the provided user ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -919,7 +919,7 @@ Causes the source user to unblock the target user. The source user must match th
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val sourceUserId : kotlin.String = sourceUserId_example // kotlin.String | The ID of the user that is requesting to unblock the target user
@@ -970,7 +970,7 @@ Causes the source user to unfollow the target user. The source user must match t
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val sourceUserId : kotlin.String = sourceUserId_example // kotlin.String | The ID of the user that is requesting to unfollow the target user
@@ -1021,7 +1021,7 @@ Causes the source user to unmute the target user. The source user must match the
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = UsersApi()
 val sourceUserId : kotlin.String = sourceUserId_example // kotlin.String | The ID of the user that is requesting to unmute the target user

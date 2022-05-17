@@ -42,7 +42,7 @@ Add or delete rules from a user&#39;s active rule set. Users can provide unique,
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val addOrDeleteRulesRequest : AddOrDeleteRulesRequest =  // AddOrDeleteRulesRequest | 
@@ -93,7 +93,7 @@ Causes the user to create a tweet under the authorized account.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val inlineObject3 : InlineObject3 =  // InlineObject3 | 
@@ -142,7 +142,7 @@ Delete specified Tweet (in the path) by ID.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the Tweet to be deleted.
@@ -191,7 +191,7 @@ Returns a variety of information about the Tweet specified by the requested ID.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | A single Tweet ID.
@@ -254,7 +254,7 @@ Returns a variety of information about the Tweet specified by the requested ID.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val ids : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | A comma separated list of Tweet IDs. Up to 100 are allowed in a single request.
@@ -317,7 +317,7 @@ Returns a variety of information about each tweet that quotes the Tweet specifie
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the Quoted Tweet.
@@ -384,7 +384,7 @@ Returns rules from a user&#39;s active rule set. Users can fetch all of their ru
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val ids : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | A comma-separated list of Rule IDs.
@@ -437,7 +437,7 @@ Hides or unhides a reply to an owned conversation.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the reply that you want to hide or unhide.
@@ -488,7 +488,7 @@ Returns a list of Tweets associated with the provided List ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to list Tweets of
@@ -555,7 +555,7 @@ Streams a deterministic 1% of public Tweets.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val expansions : kotlin.collections.Set<kotlin.String> = ["author_id","referenced_tweets.id","in_reply_to_user_id","geo.place_id","attachments.media_keys","attachments.poll_ids","entities.mentions.username","referenced_tweets.id.author_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
@@ -616,7 +616,7 @@ Streams Tweets matching the stream&#39;s active rule set.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val expansions : kotlin.collections.Set<kotlin.String> = ["author_id","referenced_tweets.id","in_reply_to_user_id","geo.place_id","attachments.media_keys","attachments.poll_ids","entities.mentions.username","referenced_tweets.id.author_id"] // kotlin.collections.Set<kotlin.String> | A comma separated list of fields to expand.
@@ -677,7 +677,7 @@ Retrieves the list of users who purchased a ticket to the given space
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
@@ -730,7 +730,7 @@ Retrieves tweets shared in the specified space
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
@@ -785,7 +785,7 @@ Returns Tweet Counts that match a search query.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val query : kotlin.String = (from:TwitterDev OR from:TwitterAPI) has:media -is:retweet // kotlin.String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length
@@ -848,7 +848,7 @@ Returns Tweet Counts from the last 7 days that match a search query.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val query : kotlin.String = (from:TwitterDev OR from:TwitterAPI) has:media -is:retweet // kotlin.String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length
@@ -911,7 +911,7 @@ Returns Tweets that match a search query.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val query : kotlin.String = (from:TwitterDev OR from:TwitterAPI) has:media -is:retweet // kotlin.String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length
@@ -988,7 +988,7 @@ Returns Tweets from the last 7 days that match a search query.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val query : kotlin.String = (from:TwitterDev OR from:TwitterAPI) has:media -is:retweet // kotlin.String | One query/rule/filter for matching Tweets. Refer to https://t.co/rulelength to identify the max query length
@@ -1067,7 +1067,7 @@ Causes the user (in the path) to like the specified tweet. The user in the path 
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to like the tweet
@@ -1118,7 +1118,7 @@ Returns a list of Tweets liked by the provided User ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the User to list the liked Tweets of
@@ -1185,7 +1185,7 @@ Returns Tweet objects that mention username associated to the provided User ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the User to list mentions of
@@ -1260,7 +1260,7 @@ Causes the user (in the path) to retweet the specified tweet. The user in the pa
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to retweet the tweet
@@ -1311,7 +1311,7 @@ Returns a list of Tweets authored by the provided User ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the User to list Tweets of
@@ -1388,7 +1388,7 @@ Causes the user (in the path) to unlike the specified tweet. The user must match
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to unlike the tweet
@@ -1439,7 +1439,7 @@ Causes the user (in the path) to unretweet the specified tweet. The user must ma
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = TweetsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user that is requesting to unretweet the tweet

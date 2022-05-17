@@ -21,7 +21,7 @@ Creates a compliance for the given job type
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ComplianceApi()
 val inlineObject5 : InlineObject5 =  // InlineObject5 | 
@@ -70,7 +70,7 @@ Returns a single compliance job by ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ComplianceApi()
 val id : kotlin.String = id_example // kotlin.String | ID of the compliance job to retrieve.
@@ -119,7 +119,7 @@ Returns recent compliance jobs for a given job type and optional job status
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ComplianceApi()
 val type : ComplianceJobType =  // ComplianceJobType | Type of compliance job to list.

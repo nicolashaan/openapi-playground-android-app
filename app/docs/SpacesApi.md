@@ -24,7 +24,7 @@ Returns a variety of information about the Space specified by the requested ID
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = SpacesApi()
 val id : kotlin.String = id_example // kotlin.String | The space id to be retrieved
@@ -79,7 +79,7 @@ Returns a variety of information about the Spaces created by the provided User I
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = SpacesApi()
 val userIds : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | The users to search through
@@ -134,7 +134,7 @@ Returns a variety of information about the Spaces specified by the requested IDs
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = SpacesApi()
 val ids : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | A list of space ids
@@ -189,7 +189,7 @@ Returns Spaces that match the provided query.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = SpacesApi()
 val query : kotlin.String = crypto // kotlin.String | The search query
@@ -248,7 +248,7 @@ Retrieves the list of users who purchased a ticket to the given space
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = SpacesApi()
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved
@@ -301,7 +301,7 @@ Retrieves tweets shared in the specified space
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = SpacesApi()
 val id : kotlin.String = 1YqKDqWqdPLsV // kotlin.String | The space id from which tweets will be retrieved

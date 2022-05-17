@@ -32,7 +32,7 @@ Get a User&#39;s List Memberships.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -93,7 +93,7 @@ Causes a user to become a member of a List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to add a member
@@ -144,7 +144,7 @@ Creates a new List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val listCreateRequest : ListCreateRequest =  // ListCreateRequest | 
@@ -193,7 +193,7 @@ Delete a List that you own.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to delete
@@ -242,7 +242,7 @@ Returns a List
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to get
@@ -299,7 +299,7 @@ Update a List that you own.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to modify
@@ -350,7 +350,7 @@ Causes a user to be removed from the members of a List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the List to remove a member
@@ -401,7 +401,7 @@ Causes a user to follow a List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will follow the List
@@ -452,7 +452,7 @@ Get a User&#39;s Owned Lists.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -513,7 +513,7 @@ Causes a user to pin a List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will pin the List
@@ -564,7 +564,7 @@ Get a User&#39;s Pinned Lists.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
@@ -619,7 +619,7 @@ Causes a user to unfollow a List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will unfollow the List
@@ -670,7 +670,7 @@ Causes a user to remove a pinned List.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the authenticated source user that will remove the pinned List
@@ -721,7 +721,7 @@ Returns a user&#39;s followed Lists.
 ```kotlin
 // Import classes:
 //import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import fr.haan.open_api_playground_app.data.entities.*
 
 val apiInstance = ListsApi()
 val id : kotlin.String = id_example // kotlin.String | The ID of the user for whom to return results
