@@ -1,10 +1,10 @@
 .openapi-generator/FILES
 .openapi-generator/VERSION
 gradle/
-src/main/java/org/
+src/main/java/org/openapitools/**/auth/
+src/main/java/org/openapitools/**/ApiClient.kt
 .openapi-generator-ignore
 *
-.openapi-generator-ignore
 .openapi-generator/
 README.md
 gradlew.bat
