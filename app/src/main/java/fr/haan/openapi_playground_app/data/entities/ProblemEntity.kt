@@ -33,7 +33,7 @@ import kotlinx.serialization.Contextual
  * @param detail 
  * @param status 
  */
-@Serializable
+
 interface ProblemEntity {
 
     @SerialName(value = "type")

@@ -33,7 +33,7 @@ import kotlinx.serialization.Contextual
  * @param height The height of the media in pixels
  * @param width The width of the media in pixels
  */
-@Serializable
+
 interface MediaEntity {
 
     @SerialName(value = "type")
