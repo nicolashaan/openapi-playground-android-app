@@ -3,6 +3,7 @@
 gradle/
 src/main/java/org/openapitools/**/auth/
 src/main/java/org/openapitools/**/ApiClient.kt
+src/**/ProblemOrErrorEntity.kt
 .openapi-generator-ignore
 *
 .openapi-generator/
