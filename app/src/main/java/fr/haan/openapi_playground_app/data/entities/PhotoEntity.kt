@@ -61,5 +61,5 @@ data class PhotoEntity (
     @SerialName(value = "alt_text")
     val altText: kotlin.String? = null
 
-) : MediaEntity()
+) : MediaEntity
 

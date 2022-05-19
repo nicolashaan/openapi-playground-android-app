@@ -58,7 +58,7 @@ data class ClientForbiddenProblemEntity (
     @Contextual @SerialName(value = "registration_url")
     val registrationUrl: java.net.URI? = null
 
-) : ProblemEntity() {
+) : ProblemEntity {
 
     /**
      * 

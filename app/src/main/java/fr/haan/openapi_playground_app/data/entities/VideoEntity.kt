@@ -87,5 +87,5 @@ data class VideoEntity (
     @SerialName(value = "promoted_metrics")
     val promotedMetrics: VideoAllOfPromotedMetricsEntity? = null
 
-) : MediaEntity()
+) : MediaEntity
 

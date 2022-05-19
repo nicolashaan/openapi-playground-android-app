@@ -58,5 +58,5 @@ data class DuplicateRuleProblemEntity (
     @SerialName(value = "id")
     val id: kotlin.String? = null
 
-) : ProblemEntity()
+) : ProblemEntity
 

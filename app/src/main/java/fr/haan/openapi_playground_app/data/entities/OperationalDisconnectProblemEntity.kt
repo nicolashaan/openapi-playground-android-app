@@ -54,7 +54,7 @@ data class OperationalDisconnectProblemEntity (
     @SerialName(value = "disconnect_type")
     val disconnectType: OperationalDisconnectProblemEntity.DisconnectType? = null
 
-) : ProblemEntity() {
+) : ProblemEntity {
 
     /**
      * 

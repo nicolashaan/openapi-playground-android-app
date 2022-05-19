@@ -63,5 +63,5 @@ data class AnimatedGifEntity (
     @SerialName(value = "variants")
     val variants: kotlin.collections.List<VideoAllOfVariantsEntity>? = null
 
-) : MediaEntity()
+) : MediaEntity
 

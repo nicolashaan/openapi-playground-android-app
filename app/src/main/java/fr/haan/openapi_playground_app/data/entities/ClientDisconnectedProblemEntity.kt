@@ -49,5 +49,5 @@ data class ClientDisconnectedProblemEntity (
     @SerialName(value = "status")
     override val status: kotlin.Int? = null
 
-) : ProblemEntity()
+) : ProblemEntity
 

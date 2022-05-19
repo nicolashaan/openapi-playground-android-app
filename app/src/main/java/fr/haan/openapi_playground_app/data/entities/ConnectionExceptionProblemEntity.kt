@@ -54,7 +54,7 @@ data class ConnectionExceptionProblemEntity (
     @SerialName(value = "connection_issue")
     val connectionIssue: ConnectionExceptionProblemEntity.ConnectionIssue? = null
 
-) : ProblemEntity() {
+) : ProblemEntity {
 
     /**
      * 

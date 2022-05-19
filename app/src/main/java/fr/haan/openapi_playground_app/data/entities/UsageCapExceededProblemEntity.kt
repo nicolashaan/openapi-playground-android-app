@@ -58,7 +58,7 @@ data class UsageCapExceededProblemEntity (
     @SerialName(value = "scope")
     val scope: UsageCapExceededProblemEntity.Scope? = null
 
-) : ProblemEntity() {
+) : ProblemEntity {
 
     /**
      * 
